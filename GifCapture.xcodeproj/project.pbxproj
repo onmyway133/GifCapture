@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */; };
+		D20CD8421E675E6100DB57D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8411E675E6100DB57D0 /* ViewController.swift */; };
+		D20CD8441E675E6100DB57D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8431E675E6100DB57D0 /* Assets.xcassets */; };
+		D20CD8471E675E6100DB57D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8451E675E6100DB57D0 /* Main.storyboard */; };
+		D20CD8521E675E6100DB57D0 /* GifCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */; };
+		D20CD85D1E675E6100DB57D0 /* GifCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D20CD84E1E675E6100DB57D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20CD8341E675E6100DB57D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20CD83B1E675E6100DB57D0;
+			remoteInfo = GifCapture;
+		};
+		D20CD8591E675E6100DB57D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20CD8341E675E6100DB57D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20CD83B1E675E6100DB57D0;
+			remoteInfo = GifCapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D20CD83C1E675E6100DB57D0 /* GifCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D20CD8411E675E6100DB57D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D20CD8431E675E6100DB57D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D20CD8461E675E6100DB57D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D20CD8481E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20CD84D1E675E6100DB57D0 /* GifCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureTests.swift; sourceTree = "<group>"; };
+		D20CD8531E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20CD8581E675E6100DB57D0 /* GifCaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifCaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureUITests.swift; sourceTree = "<group>"; };
+		D20CD85E1E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D20CD8391E675E6100DB57D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20CD84A1E675E6100DB57D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20CD8551E675E6100DB57D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D20CD8331E675E6100DB57D0 = {
+			isa = PBXGroup;
+			children = (
+				D20CD83E1E675E6100DB57D0 /* GifCapture */,
+				D20CD8501E675E6100DB57D0 /* GifCaptureTests */,
+				D20CD85B1E675E6100DB57D0 /* GifCaptureUITests */,
+				D20CD83D1E675E6100DB57D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D20CD83D1E675E6100DB57D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20CD83C1E675E6100DB57D0 /* GifCapture.app */,
+				D20CD84D1E675E6100DB57D0 /* GifCaptureTests.xctest */,
+				D20CD8581E675E6100DB57D0 /* GifCaptureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20CD83E1E675E6100DB57D0 /* GifCapture */ = {
+			isa = PBXGroup;
+			children = (
+				D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */,
+				D20CD8411E675E6100DB57D0 /* ViewController.swift */,
+				D20CD8431E675E6100DB57D0 /* Assets.xcassets */,
+				D20CD8451E675E6100DB57D0 /* Main.storyboard */,
+				D20CD8481E675E6100DB57D0 /* Info.plist */,
+			);
+			path = GifCapture;
+			sourceTree = "<group>";
+		};
+		D20CD8501E675E6100DB57D0 /* GifCaptureTests */ = {
+			isa = PBXGroup;
+			children = (
+				D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */,
+				D20CD8531E675E6100DB57D0 /* Info.plist */,
+			);
+			path = GifCaptureTests;
+			sourceTree = "<group>";
+		};
+		D20CD85B1E675E6100DB57D0 /* GifCaptureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */,
+				D20CD85E1E675E6100DB57D0 /* Info.plist */,
+			);
+			path = GifCaptureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D20CD83B1E675E6100DB57D0 /* GifCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20CD8611E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCapture" */;
+			buildPhases = (
+				D20CD8381E675E6100DB57D0 /* Sources */,
+				D20CD8391E675E6100DB57D0 /* Frameworks */,
+				D20CD83A1E675E6100DB57D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GifCapture;
+			productName = GifCapture;
+			productReference = D20CD83C1E675E6100DB57D0 /* GifCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D20CD84C1E675E6100DB57D0 /* GifCaptureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20CD8641E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCaptureTests" */;
+			buildPhases = (
+				D20CD8491E675E6100DB57D0 /* Sources */,
+				D20CD84A1E675E6100DB57D0 /* Frameworks */,
+				D20CD84B1E675E6100DB57D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20CD84F1E675E6100DB57D0 /* PBXTargetDependency */,
+			);
+			name = GifCaptureTests;
+			productName = GifCaptureTests;
+			productReference = D20CD84D1E675E6100DB57D0 /* GifCaptureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D20CD8571E675E6100DB57D0 /* GifCaptureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20CD8671E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCaptureUITests" */;
+			buildPhases = (
+				D20CD8541E675E6100DB57D0 /* Sources */,
+				D20CD8551E675E6100DB57D0 /* Frameworks */,
+				D20CD8561E675E6100DB57D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20CD85A1E675E6100DB57D0 /* PBXTargetDependency */,
+			);
+			name = GifCaptureUITests;
+			productName = GifCaptureUITests;
+			productReference = D20CD8581E675E6100DB57D0 /* GifCaptureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D20CD8341E675E6100DB57D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Fantageek;
+				TargetAttributes = {
+					D20CD83B1E675E6100DB57D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D20CD84C1E675E6100DB57D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D20CD83B1E675E6100DB57D0;
+					};
+					D20CD8571E675E6100DB57D0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D20CD83B1E675E6100DB57D0;
+					};
+				};
+			};
+			buildConfigurationList = D20CD8371E675E6100DB57D0 /* Build configuration list for PBXProject "GifCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D20CD8331E675E6100DB57D0;
+			productRefGroup = D20CD83D1E675E6100DB57D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20CD83B1E675E6100DB57D0 /* GifCapture */,
+				D20CD84C1E675E6100DB57D0 /* GifCaptureTests */,
+				D20CD8571E675E6100DB57D0 /* GifCaptureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D20CD83A1E675E6100DB57D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20CD8441E675E6100DB57D0 /* Assets.xcassets in Resources */,
+				D20CD8471E675E6100DB57D0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20CD84B1E675E6100DB57D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20CD8561E675E6100DB57D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D20CD8381E675E6100DB57D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20CD8421E675E6100DB57D0 /* ViewController.swift in Sources */,
+				D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20CD8491E675E6100DB57D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20CD8521E675E6100DB57D0 /* GifCaptureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20CD8541E675E6100DB57D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20CD85D1E675E6100DB57D0 /* GifCaptureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D20CD84F1E675E6100DB57D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20CD83B1E675E6100DB57D0 /* GifCapture */;
+			targetProxy = D20CD84E1E675E6100DB57D0 /* PBXContainerItemProxy */;
+		};
+		D20CD85A1E675E6100DB57D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20CD83B1E675E6100DB57D0 /* GifCapture */;
+			targetProxy = D20CD8591E675E6100DB57D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D20CD8451E675E6100DB57D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20CD8461E675E6100DB57D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D20CD85F1E675E6100DB57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D20CD8601E675E6100DB57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D20CD8621E675E6100DB57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GifCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D20CD8631E675E6100DB57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GifCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D20CD8651E675E6100DB57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GifCaptureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifCapture.app/Contents/MacOS/GifCapture";
+			};
+			name = Debug;
+		};
+		D20CD8661E675E6100DB57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GifCaptureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifCapture.app/Contents/MacOS/GifCapture";
+			};
+			name = Release;
+		};
+		D20CD8681E675E6100DB57D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GifCaptureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCaptureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GifCapture;
+			};
+			name = Debug;
+		};
+		D20CD8691E675E6100DB57D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GifCaptureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCaptureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GifCapture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D20CD8371E675E6100DB57D0 /* Build configuration list for PBXProject "GifCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20CD85F1E675E6100DB57D0 /* Debug */,
+				D20CD8601E675E6100DB57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20CD8611E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20CD8621E675E6100DB57D0 /* Debug */,
+				D20CD8631E675E6100DB57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D20CD8641E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCaptureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20CD8651E675E6100DB57D0 /* Debug */,
+				D20CD8661E675E6100DB57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D20CD8671E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCaptureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20CD8681E675E6100DB57D0 /* Debug */,
+				D20CD8691E675E6100DB57D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D20CD8341E675E6100DB57D0 /* Project object */;
+}
