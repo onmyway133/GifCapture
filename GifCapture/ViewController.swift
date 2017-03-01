@@ -10,16 +10,30 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+  @IBOutlet weak var bottomView: NSView!
+  @IBOutlet weak var widthTextField: NSTextField!
+  @IBOutlet weak var heightTextField: NSTextField!
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    // Do any additional setup after loading the view.
+    view.wantsLayer = true
+    view.layer?.borderColor = NSColor.lightGray.cgColor
+    view.layer?.borderWidth = 2
+
+    bottomView.wantsLayer = true
+    bottomView.layer?.backgroundColor = NSColor.lightGray.cgColor
   }
 
-  override var representedObject: Any? {
-    didSet {
-    // Update the view, if already loaded.
+  override func viewDidLayout() {
+    super.viewDidLayout()
+
+    guard let window = view.window else {
+      return
     }
+
+    widthTextField.stringValue = String(format: "%d", window.frame.size.width)
+    heightTextField.stringValue = String(format: "%d", window.frame.size.height)
   }
 }
 
