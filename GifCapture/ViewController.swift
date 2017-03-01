@@ -17,6 +17,10 @@ class ViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    setup()
+  }
+
+  func setup() {
     view.wantsLayer = true
     view.layer?.borderColor = NSColor.lightGray.cgColor
     view.layer?.borderWidth = 2
@@ -32,8 +36,8 @@ class ViewController: NSViewController {
       return
     }
 
-    widthTextField.stringValue = String(format: "%d", window.frame.size.width)
-    heightTextField.stringValue = String(format: "%d", window.frame.size.height)
+    widthTextField.stringValue = String(format: "%.0f", window.frame.size.width)
+    heightTextField.stringValue = String(format: "%.0f", window.frame.size.height)
   }
 }
 
