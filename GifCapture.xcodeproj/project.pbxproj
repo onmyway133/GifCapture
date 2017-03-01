@@ -13,6 +13,7 @@
 		D20CD8471E675E6100DB57D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8451E675E6100DB57D0 /* Main.storyboard */; };
 		D20CD8521E675E6100DB57D0 /* GifCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */; };
 		D20CD85D1E675E6100DB57D0 /* GifCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */; };
+		D2F1DEE11E677E540027A75C /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1DEE01E677E540027A75C /* CameraMan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D20CD8581E675E6100DB57D0 /* GifCaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifCaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureUITests.swift; sourceTree = "<group>"; };
 		D20CD85E1E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F1DEE01E677E540027A75C /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D20CD8431E675E6100DB57D0 /* Assets.xcassets */,
 				D20CD8451E675E6100DB57D0 /* Main.storyboard */,
 				D20CD8481E675E6100DB57D0 /* Info.plist */,
+				D2F1DEE01E677E540027A75C /* CameraMan.swift */,
 			);
 			path = GifCapture;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20CD8421E675E6100DB57D0 /* ViewController.swift in Sources */,
+				D2F1DEE11E677E540027A75C /* CameraMan.swift in Sources */,
 				D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +500,7 @@
 				D20CD8631E675E6100DB57D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20CD8641E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCaptureTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				D20CD8661E675E6100DB57D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20CD8671E675E6100DB57D0 /* Build configuration list for PBXNativeTarget "GifCaptureUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				D20CD8691E675E6100DB57D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

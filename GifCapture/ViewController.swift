@@ -16,6 +16,8 @@ class ViewController: NSViewController {
   @IBOutlet weak var recordButton: NSButton!
   @IBOutlet weak var stopButton: NSButton!
 
+  var cameraMan: CameraMan?
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -29,6 +31,8 @@ class ViewController: NSViewController {
 
     bottomView.wantsLayer = true
     bottomView.layer?.backgroundColor = NSColor.lightGray.cgColor
+
+    stopButton.isEnabled = false
   }
 
   override func viewDidLayout() {
@@ -44,13 +48,20 @@ class ViewController: NSViewController {
 
   // MARK: - Action
   @IBAction func recordButtonTouched(_ sender: NSButton) {
+    if cameraMan == nil {
+      let outputURL = URL(fileURLWithPath: NSHomeDirectory())
+        .appendingPathComponent("/Downloads/file")
+        .appendingPathExtension("mov")
 
+      cameraMan = CameraMan(outputURL: outputURL)
+      cameraMan?.record()
+      stopButton.isEnabled = true
+    }
   }
 
   @IBAction func stopButtonTouched(_ sender: NSButton) {
-    
+    cameraMan?.stop()
+    cameraMan = nil
   }
-  
-
 }
 
