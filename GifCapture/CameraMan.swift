@@ -33,13 +33,16 @@ class CameraMan: NSObject {
 
   // MARK: - Logic
 
-  let session: AVCaptureSession
-  let input: AVCaptureScreenInput
-  let output: AVCaptureMovieFileOutput
-  let outputURL: URL
+  fileprivate let session: AVCaptureSession
+  fileprivate let input: AVCaptureScreenInput
+  fileprivate let output: AVCaptureMovieFileOutput
 
-  init(outputURL: URL) {
+  fileprivate let outputURL: URL
+  fileprivate let rect: CGRect
+
+  init(outputURL: URL, rect: CGRect) {
     self.outputURL = outputURL
+    self.rect = rect
 
     // Session
     session = AVCaptureSession()
@@ -47,6 +50,7 @@ class CameraMan: NSObject {
 
     // Input
     input = AVCaptureScreenInput(displayID: CGMainDisplayID())
+    input.cropRect = rect
     if session.canAddInput(input) {
       session.addInput(input)
     }

@@ -53,7 +53,7 @@ class ViewController: NSViewController {
         .appendingPathComponent("/Downloads/file")
         .appendingPathExtension("mov")
 
-      cameraMan = CameraMan(outputURL: outputURL)
+      cameraMan = CameraMan(outputURL: outputURL, rect: view.window!.frame)
       cameraMan?.record()
       stopButton.isEnabled = true
     }
