@@ -717,14 +717,38 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sI1-mv-qbT">
+                                        <rect key="frame" x="331" y="0.0" width="83" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Record" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mFQ-F2-qgK">
+                                            <behavior key="behavior" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="recordButtonTouched:" target="XfG-lQ-9wD" id="dAd-wp-V2L"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DUo-9A-BPE">
+                                        <rect key="frame" x="410" y="0.0" width="69" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C51-ge-YAO">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="stopButtonTouched:" target="XfG-lQ-9wD" id="gHy-H2-PYq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="yxJ-8n-bv6" firstAttribute="leading" secondItem="9oc-hO-DER" secondAttribute="leading" constant="11" id="1Bw-2T-cNi"/>
                                     <constraint firstItem="yxJ-8n-bv6" firstAttribute="centerY" secondItem="9oc-hO-DER" secondAttribute="centerY" id="SIV-dY-vbd"/>
                                     <constraint firstItem="fvq-ew-ueG" firstAttribute="leading" secondItem="OEs-8Q-9z4" secondAttribute="trailing" constant="8" id="ZyV-oN-Ic1"/>
+                                    <constraint firstItem="sI1-mv-qbT" firstAttribute="centerY" secondItem="9oc-hO-DER" secondAttribute="centerY" id="cpy-us-txa"/>
                                     <constraint firstItem="fvq-ew-ueG" firstAttribute="centerY" secondItem="9oc-hO-DER" secondAttribute="centerY" id="djl-Df-WUD"/>
                                     <constraint firstItem="OEs-8Q-9z4" firstAttribute="centerY" secondItem="9oc-hO-DER" secondAttribute="centerY" id="eOn-el-xCP"/>
                                     <constraint firstItem="OEs-8Q-9z4" firstAttribute="width" secondItem="fvq-ew-ueG" secondAttribute="width" id="fh7-g2-sxZ"/>
+                                    <constraint firstItem="DUo-9A-BPE" firstAttribute="centerY" secondItem="9oc-hO-DER" secondAttribute="centerY" id="h9n-h3-wYi"/>
+                                    <constraint firstAttribute="trailing" secondItem="DUo-9A-BPE" secondAttribute="trailing" constant="7" id="kfy-s9-fmY"/>
+                                    <constraint firstItem="DUo-9A-BPE" firstAttribute="leading" secondItem="sI1-mv-qbT" secondAttribute="trailing" constant="8" id="r3q-XN-Nf8"/>
                                     <constraint firstAttribute="height" constant="34" id="sGv-OI-Acn"/>
                                     <constraint firstItem="OEs-8Q-9z4" firstAttribute="leading" secondItem="yxJ-8n-bv6" secondAttribute="trailing" constant="8" id="ynz-Y9-GVC"/>
                                 </constraints>
@@ -740,6 +764,8 @@
                     <connections>
                         <outlet property="bottomView" destination="9oc-hO-DER" id="jbA-25-pkg"/>
                         <outlet property="heightTextField" destination="fvq-ew-ueG" id="EIa-GT-g3U"/>
+                        <outlet property="recordButton" destination="sI1-mv-qbT" id="OfQ-bF-LIm"/>
+                        <outlet property="stopButton" destination="DUo-9A-BPE" id="Etv-y1-0At"/>
                         <outlet property="widthTextField" destination="OEs-8Q-9z4" id="xqy-9J-k4x"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,8 @@ class ViewController: NSViewController {
   @IBOutlet weak var bottomView: NSView!
   @IBOutlet weak var widthTextField: NSTextField!
   @IBOutlet weak var heightTextField: NSTextField!
+  @IBOutlet weak var recordButton: NSButton!
+  @IBOutlet weak var stopButton: NSButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -39,5 +41,16 @@ class ViewController: NSViewController {
     widthTextField.stringValue = String(format: "%.0f", window.frame.size.width)
     heightTextField.stringValue = String(format: "%.0f", window.frame.size.height)
   }
+
+  // MARK: - Action
+  @IBAction func recordButtonTouched(_ sender: NSButton) {
+
+  }
+
+  @IBAction func stopButtonTouched(_ sender: NSButton) {
+    
+  }
+  
+
 }
 
