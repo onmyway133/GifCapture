@@ -15,7 +15,7 @@ class CameraMan: NSObject {
 
   func record() {
     session.startRunning()
-    output.startRecording(toOutputFileURL: outputURL, recordingDelegate: self)
+    output.startRecording(toOutputFileURL: outputUrl, recordingDelegate: self)
   }
 
   func resume() {
@@ -37,11 +37,11 @@ class CameraMan: NSObject {
   fileprivate let input: AVCaptureScreenInput
   fileprivate let output: AVCaptureMovieFileOutput
 
-  fileprivate let outputURL: URL
+  fileprivate let outputUrl: URL
   fileprivate let rect: CGRect
 
-  init(outputURL: URL, rect: CGRect) {
-    self.outputURL = outputURL
+  init(outputUrl: URL, rect: CGRect) {
+    self.outputUrl = outputUrl
     self.rect = rect
 
     // Session

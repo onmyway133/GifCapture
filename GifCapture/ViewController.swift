@@ -8,6 +8,10 @@
 
 import Cocoa
 
+enum State {
+  case record, pause, resume, stop
+}
+
 class ViewController: NSViewController {
 
   @IBOutlet weak var bottomView: NSView!
@@ -17,6 +21,11 @@ class ViewController: NSViewController {
   @IBOutlet weak var stopButton: NSButton!
 
   var cameraMan: CameraMan?
+  var state: State = .stop {
+    didSet {
+      handleStatedChanged()
+    }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -48,20 +57,62 @@ class ViewController: NSViewController {
 
   // MARK: - Action
   @IBAction func recordButtonTouched(_ sender: NSButton) {
-    if cameraMan == nil {
-      let outputURL = URL(fileURLWithPath: NSHomeDirectory())
-        .appendingPathComponent("/Downloads/file")
-        .appendingPathExtension("mov")
+    let mapping: [State: State] = [
+      .stop: .record,
+      .record: .pause,
+      .pause: .resume,
+      .resume: .pause
+    ]
 
-      cameraMan = CameraMan(outputURL: outputURL, rect: view.window!.frame)
-      cameraMan?.record()
-      stopButton.isEnabled = true
+    if let nextState = mapping[state] {
+      state = nextState
     }
   }
 
   @IBAction func stopButtonTouched(_ sender: NSButton) {
-    cameraMan?.stop()
-    cameraMan = nil
+    state = .stop
+  }
+
+  // MARK: - State
+
+  func handleStatedChanged() {
+    switch state {
+    case .record:
+      cameraMan = CameraMan(outputUrl: outputUrl(), rect: recordFrame())
+      cameraMan?.record()
+      recordButton.title = "Pause"
+      stopButton.isEnabled = true
+    case .pause:
+      cameraMan?.pause()
+      recordButton.title = "Resume"
+    case .resume:
+      cameraMan?.resume()
+      recordButton.title = "Pause"
+    case .stop:
+      cameraMan?.stop()
+      cameraMan = nil
+      recordButton.title = "Record"
+      stopButton.isEnabled = false
+    }
+  }
+
+  // MARK: - Frame
+
+  func recordFrame() -> CGRect {
+    guard let window = view.window else {
+      return view.frame
+    }
+
+    return CGRect(x: window.frame.origin.x,
+                  y: window.frame.origin.y,
+                  width: view.frame.size.width,
+                  height: view.frame.size.height - bottomView.frame.size.height)
+  }
+
+  func outputUrl() -> URL {
+    return URL(fileURLWithPath: NSHomeDirectory())
+      .appendingPathComponent("/Downloads/file")
+      .appendingPathExtension("mov")
   }
 }
 
