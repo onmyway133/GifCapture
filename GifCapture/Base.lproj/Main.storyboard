@@ -782,7 +782,6 @@
                     </view>
                     <connections>
                         <outlet property="bottomBox" destination="75W-Fc-kTw" id="xUH-P5-KQc"/>
-                        <outlet property="bottomView" destination="9oc-hO-DER" id="jbA-25-pkg"/>
                         <outlet property="heightTextField" destination="fvq-ew-ueG" id="EIa-GT-g3U"/>
                         <outlet property="recordButton" destination="sI1-mv-qbT" id="OfQ-bF-LIm"/>
                         <outlet property="stopButton" destination="DUo-9A-BPE" id="Etv-y1-0At"/>

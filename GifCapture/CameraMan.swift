@@ -83,5 +83,7 @@ extension CameraMan: AVCaptureFileOutputRecordingDelegate {
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
 
+    let converter = Converter()
+    converter.convert(videoUrl: outputFileURL)
   }
 }
