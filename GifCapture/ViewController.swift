@@ -14,7 +14,7 @@ enum State {
 
 class ViewController: NSViewController {
 
-  @IBOutlet weak var bottomView: NSView!
+  @IBOutlet weak var bottomBox: NSBox!
   @IBOutlet weak var widthTextField: NSTextField!
   @IBOutlet weak var heightTextField: NSTextField!
   @IBOutlet weak var recordButton: NSButton!
@@ -34,25 +34,16 @@ class ViewController: NSViewController {
   }
 
   func setup() {
-    view.wantsLayer = true
-    view.layer?.borderColor = NSColor.lightGray.cgColor
-    view.layer?.borderWidth = 2
-
-    bottomView.wantsLayer = true
-    bottomView.layer?.backgroundColor = NSColor.lightGray.cgColor
-
     stopButton.isEnabled = false
   }
 
   override func viewDidLayout() {
     super.viewDidLayout()
 
-    guard let window = view.window else {
-      return
-    }
+    let frame = recordFrame()
 
-    widthTextField.stringValue = String(format: "%.0f", window.frame.size.width)
-    heightTextField.stringValue = String(format: "%.0f", window.frame.size.height)
+    widthTextField.stringValue = String(format: "%.0f", frame.size.width)
+    heightTextField.stringValue = String(format: "%.0f", frame.size.height)
   }
 
   // MARK: - Action
@@ -104,9 +95,9 @@ class ViewController: NSViewController {
     }
 
     return CGRect(x: window.frame.origin.x,
-                  y: window.frame.origin.y,
+                  y: window.frame.origin.y + 35,
                   width: view.frame.size.width,
-                  height: view.frame.size.height - bottomView.frame.size.height)
+                  height: view.frame.size.height - bottomBox.frame.size.height)
   }
 
   func outputUrl() -> URL {
