@@ -94,10 +94,10 @@ class ViewController: NSViewController {
       return view.frame
     }
 
-    return CGRect(x: window.frame.origin.x,
-                  y: window.frame.origin.y + 35,
-                  width: view.frame.size.width,
-                  height: view.frame.size.height - bottomBox.frame.size.height)
+    return CGRect(x: window.frame.origin.x + 2,
+                  y: window.frame.origin.y + 12 + 20 + 2,
+                  width: view.frame.size.width - 4,
+                  height: view.frame.size.height - bottomBox.frame.size.height - 20 - 2)
   }
 
   func outputUrl() -> URL {
