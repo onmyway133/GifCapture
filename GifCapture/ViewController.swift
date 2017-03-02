@@ -65,7 +65,7 @@ class ViewController: NSViewController {
   func handleStatedChanged() {
     switch state {
     case .record:
-      cameraMan = CameraMan(outputUrl: outputUrl(), rect: recordFrame())
+      cameraMan = CameraMan(outputUrl: Utils.outputUrl(), rect: recordFrame())
       cameraMan?.record()
       recordButton.title = "Pause"
       stopButton.isEnabled = true
@@ -98,12 +98,6 @@ class ViewController: NSViewController {
                   y: window.frame.origin.y + titleHeight + someValue + lineWidth,
                   width: view.frame.size.width - lineWidth * 2,
                   height: view.frame.size.height - bottomBox.frame.size.height - someValue - lineWidth)
-  }
-
-  func outputUrl() -> URL {
-    return URL(fileURLWithPath: NSHomeDirectory())
-      .appendingPathComponent("/Downloads/file")
-      .appendingPathExtension("mov")
   }
 }
 
