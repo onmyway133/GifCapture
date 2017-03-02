@@ -8,10 +8,6 @@
 
 import Cocoa
 
-enum State {
-  case record, pause, resume, stop
-}
-
 class ViewController: NSViewController {
 
   @IBOutlet weak var bottomBox: NSBox!
@@ -94,10 +90,14 @@ class ViewController: NSViewController {
       return view.frame
     }
 
-    return CGRect(x: window.frame.origin.x + 2,
-                  y: window.frame.origin.y + 12 + 20 + 2,
-                  width: view.frame.size.width - 4,
-                  height: view.frame.size.height - bottomBox.frame.size.height - 20 - 2)
+    let lineWidth: CGFloat = 2
+    let titleHeight: CGFloat = 12
+    let someValue: CGFloat = 20
+
+    return CGRect(x: window.frame.origin.x + lineWidth,
+                  y: window.frame.origin.y + titleHeight + someValue + lineWidth,
+                  width: view.frame.size.width - lineWidth * 2,
+                  height: view.frame.size.height - bottomBox.frame.size.height - someValue - lineWidth)
   }
 
   func outputUrl() -> URL {
