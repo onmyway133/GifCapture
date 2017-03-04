@@ -65,10 +65,11 @@ class ViewController: NSViewController {
   func handleStatedChanged() {
     switch state {
     case .record:
-      cameraMan = CameraMan(outputUrl: Utils.outputUrl(), rect: recordFrame())
+      cameraMan = CameraMan(rect: recordFrame())
       cameraMan?.record()
       recordButton.title = "Pause"
       stopButton.isEnabled = true
+      toggleWindow(enabled: false)
     case .pause:
       cameraMan?.pause()
       recordButton.title = "Resume"
@@ -80,6 +81,22 @@ class ViewController: NSViewController {
       cameraMan = nil
       recordButton.title = "Record"
       stopButton.isEnabled = false
+      toggleWindow(enabled: true)
+    }
+  }
+
+  func toggleWindow(enabled: Bool) {
+    guard let window = view.window else {
+      return
+    }
+
+    if enabled {
+      window.styleMask.update(with: .resizable)
+      window.isMovable = true
+      window.isMovableByWindowBackground = true
+    } else {
+      window.styleMask.remove(.resizable)
+      window.isMovable = false
     }
   }
 

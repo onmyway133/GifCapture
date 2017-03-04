@@ -15,12 +15,4 @@ struct Utils {
     formatter.dateFormat = "yyyy-MM-dd HH.mm.ss"
     return formatter
   }()
-
-  static func outputUrl() -> URL {
-    let string = formatter.string(from: Date())
-
-    return URL(fileURLWithPath: NSHomeDirectory())
-      .appendingPathComponent("/Downloads/\(string)")
-      .appendingPathExtension("mov")
-  }
 }

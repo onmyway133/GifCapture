@@ -14,8 +14,12 @@ class CameraMan: NSObject {
   // MARK: - Public
 
   func record() {
+    let tempVideoUrl = URL(fileURLWithPath: NSTemporaryDirectory())
+      .appendingPathComponent(UUID().uuidString)
+      .appendingPathExtension("mov")
+
     session.startRunning()
-    output.startRecording(toOutputFileURL: outputUrl, recordingDelegate: self)
+    output.startRecording(toOutputFileURL: tempVideoUrl, recordingDelegate: self)
   }
 
   func resume() {
@@ -37,16 +41,16 @@ class CameraMan: NSObject {
   fileprivate let input: AVCaptureScreenInput
   fileprivate let output: AVCaptureMovieFileOutput
 
-  fileprivate let outputUrl: URL
   fileprivate let rect: CGRect
 
-  init(outputUrl: URL, rect: CGRect) {
-    self.outputUrl = outputUrl
+  fileprivate let saver: Saver
+
+  init(rect: CGRect) {
     self.rect = rect
 
     // Session
     session = AVCaptureSession()
-    session.sessionPreset = AVCaptureSessionPresetMedium
+    session.sessionPreset = AVCaptureSessionPresetHigh
 
     // Input
     input = AVCaptureScreenInput(displayID: CGMainDisplayID())
@@ -60,6 +64,9 @@ class CameraMan: NSObject {
     if session.canAddOutput(output) {
       session.addOutput(output)
     }
+
+    // Saver
+    saver = Saver()
   }
 }
 
@@ -83,7 +90,8 @@ extension CameraMan: AVCaptureFileOutputRecordingDelegate {
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
 
-    let converter = Converter()
-    converter.convert(videoUrl: outputFileURL)
+    saver.save(videoUrl: outputFileURL) {
+
+    }
   }
 }
