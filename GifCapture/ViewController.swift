@@ -94,9 +94,11 @@ class ViewController: NSViewController {
       window.styleMask.update(with: .resizable)
       window.isMovable = true
       window.isMovableByWindowBackground = true
+      window.level = Int(CGWindowLevelForKey(.normalWindow))
     } else {
       window.styleMask.remove(.resizable)
       window.isMovable = false
+      window.level = Int(CGWindowLevelForKey(.floatingWindow))
     }
   }
 
