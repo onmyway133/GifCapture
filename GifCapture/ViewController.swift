@@ -17,9 +17,11 @@ class ViewController: NSViewController {
   @IBOutlet weak var stopButton: NSButton!
 
   var cameraMan: CameraMan?
-  var state: State = .stop {
+  var state: State = .idle {
     didSet {
-      handleStatedChanged()
+      DispatchQueue.main.async {
+        self.handleStateChanged()
+      }
     }
   }
 
@@ -44,46 +46,20 @@ class ViewController: NSViewController {
 
   // MARK: - Action
   @IBAction func recordButtonTouched(_ sender: NSButton) {
-    let mapping: [State: State] = [
-      .stop: .record,
-      .record: .pause,
-      .pause: .resume,
-      .resume: .pause
-    ]
-
-    if let nextState = mapping[state] {
-      state = nextState
+    if state == .idle {
+      state = .start
+    } else if state == .pause {
+      cameraMan?.resume()
+    } else if state == .resume {
+      cameraMan?.pause()
     }
   }
 
   @IBAction func stopButtonTouched(_ sender: NSButton) {
-    state = .stop
+    cameraMan?.stop()
   }
 
-  // MARK: - State
-
-  func handleStatedChanged() {
-    switch state {
-    case .record:
-      cameraMan = CameraMan(rect: recordFrame())
-      cameraMan?.record()
-      recordButton.title = "Pause"
-      stopButton.isEnabled = true
-      toggleWindow(enabled: false)
-    case .pause:
-      cameraMan?.pause()
-      recordButton.title = "Resume"
-    case .resume:
-      cameraMan?.resume()
-      recordButton.title = "Pause"
-    case .stop:
-      cameraMan?.stop()
-      cameraMan = nil
-      recordButton.title = "Record"
-      stopButton.isEnabled = false
-      toggleWindow(enabled: true)
-    }
-  }
+  // MARK: - Window
 
   func toggleWindow(enabled: Bool) {
     guard let window = view.window else {
@@ -117,6 +93,43 @@ class ViewController: NSViewController {
                   y: window.frame.origin.y + titleHeight + someValue + lineWidth,
                   width: view.frame.size.width - lineWidth * 2,
                   height: view.frame.size.height - bottomBox.frame.size.height - someValue - lineWidth)
+  }
+
+  // MARK: - State
+
+  func handleStateChanged() {
+    switch state {
+    case .start:
+      cameraMan = CameraMan(rect: recordFrame())
+      cameraMan?.delegate = self
+      cameraMan?.record()
+    case .record:
+      recordButton.title = "Pause"
+      stopButton.isEnabled = true
+      toggleWindow(enabled: false)
+    case .pause:
+      recordButton.title = "Pause"
+    case .resume:
+      recordButton.title = "Resume"
+    case .stop:
+      break
+    case .finish:
+      state = .idle
+    case .error:
+      state = .idle
+    case .idle:
+      cameraMan = nil
+      recordButton.title = "Record"
+      stopButton.isEnabled = false
+      toggleWindow(enabled: true)
+    }
+  }
+}
+
+extension ViewController: CameraManDelegate {
+
+  func cameraMan(man: CameraMan, didChange state: State) {
+    self.state = state
   }
 }
 

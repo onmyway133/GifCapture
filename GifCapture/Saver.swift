@@ -11,16 +11,14 @@ import Regift
 
 class Saver {
 
-  func save(videoUrl: URL, completion: @escaping () -> Void) {
+  func save(videoUrl: URL, completion: @escaping (URL?) -> Void) {
 
     Regift.createGIFFromSource(videoUrl,
                                destinationFileURL: gifUrl(),
                                frameCount: 30, delayTime: 0, loopCount: 1)
     { [weak self] (url) in
-      if let _ = url {
-        self?.removeFile(at: videoUrl)
-        completion()
-      }
+      self?.removeFile(at: videoUrl)
+      completion(url)
     }
   }
 

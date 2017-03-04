@@ -9,5 +9,12 @@
 import Foundation
 
 enum State {
-  case record, pause, resume, stop
+  case start
+  case record
+  case pause
+  case resume
+  case stop
+  case finish
+  case error
+  case idle
 }

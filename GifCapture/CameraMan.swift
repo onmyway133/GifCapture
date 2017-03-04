@@ -9,7 +9,13 @@
 import Cocoa
 import AVFoundation
 
+protocol CameraManDelegate: class {
+  func cameraMan(man: CameraMan, didChange state: State)
+}
+
 class CameraMan: NSObject {
+
+  weak var delegate: CameraManDelegate?
 
   // MARK: - Public
 
@@ -73,15 +79,15 @@ class CameraMan: NSObject {
 extension CameraMan: AVCaptureFileOutputRecordingDelegate {
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didStartRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
-
+    delegate?.cameraMan(man: self, didChange: .record)
   }
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didPauseRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
-
+    delegate?.cameraMan(man: self, didChange: .pause)
   }
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didResumeRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
-
+    delegate?.cameraMan(man: self, didChange: .resume)
   }
 
   func capture(_ captureOutput: AVCaptureFileOutput!, willFinishRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
@@ -89,9 +95,18 @@ extension CameraMan: AVCaptureFileOutputRecordingDelegate {
   }
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
+    delegate?.cameraMan(man: self, didChange: .stop)
 
-    saver.save(videoUrl: outputFileURL) {
+    saver.save(videoUrl: outputFileURL) { [weak self] url in
+      guard let strongSelf = self else {
+        return
+      }
 
+      if url != nil {
+        strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .finish)
+      } else {
+        strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .error)
+      }
     }
   }
 }
