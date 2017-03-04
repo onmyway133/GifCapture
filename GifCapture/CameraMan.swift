@@ -102,11 +102,7 @@ extension CameraMan: AVCaptureFileOutputRecordingDelegate {
         return
       }
 
-      if url != nil {
-        strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .finish)
-      } else {
-        strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .error)
-      }
+      strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .finish(url))
     }
   }
 }

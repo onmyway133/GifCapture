@@ -14,7 +14,6 @@ enum State {
   case pause
   case resume
   case stop
-  case finish
-  case error
+  case finish(URL?)
   case idle
 }

@@ -46,11 +46,13 @@ class ViewController: NSViewController {
 
   // MARK: - Action
   @IBAction func recordButtonTouched(_ sender: NSButton) {
-    if state == .idle {
+    if case .idle = state {
       state = .start
-    } else if state == .pause {
+    } else if case .pause = state{
       cameraMan?.resume()
-    } else if state == .resume {
+    } else if case .record = state {
+      cameraMan?.pause()
+    } else if case .resume = state {
       cameraMan?.pause()
     }
   }
@@ -108,14 +110,17 @@ class ViewController: NSViewController {
       stopButton.isEnabled = true
       toggleWindow(enabled: false)
     case .pause:
-      recordButton.title = "Pause"
-    case .resume:
       recordButton.title = "Resume"
+    case .resume:
+      recordButton.title = "Pause"
     case .stop:
       break
-    case .finish:
-      state = .idle
-    case .error:
+    case .finish(let url):
+      if let url = url {
+
+      } else {
+
+      }
       state = .idle
     case .idle:
       cameraMan = nil
