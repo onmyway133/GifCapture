@@ -9,8 +9,16 @@
 import Cocoa
 
 class PreferencesViewController: NSViewController {
+
   @IBOutlet weak var locationTextField: NSTextField!
   @IBOutlet weak var frameRateTextField: NSTextField!
+
+  override func viewWillAppear() {
+    super.viewWillAppear()
+
+    locationTextField.stringValue = Config.shared.outputFolderUrl.absoluteString
+    frameRateTextField.stringValue = "\(Config.shared.frameRate)"
+  }
 
   override func viewDidAppear() {
     super.viewDidAppear()

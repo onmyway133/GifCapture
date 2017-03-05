@@ -10,8 +10,37 @@ import Foundation
 
 struct Config {
 
-  static var outputFolderUrl: URL = {
-    let url: URL = URL(fileURLWithPath: NSHomeDirectory()).appendingPathComponent("Downloads")
-    return url
-  }()
+  enum Keys: String {
+    case location
+    case frameRate
+  }
+
+  static let shared = Config()
+  let userDefaults: UserDefaults
+
+  init(userDefaults: UserDefaults = UserDefaults.standard) {
+    self.userDefaults = userDefaults
+  }
+
+  var outputFolderUrl: URL {
+    get {
+      let location = userDefaults.url(forKey: Keys.location.rawValue)
+      return location ?? URL(fileURLWithPath: NSHomeDirectory()).appendingPathComponent("Downloads")
+    }
+    set {
+      userDefaults.set(newValue, forKey: Keys.location.rawValue)
+      userDefaults.synchronize()
+    }
+  }
+
+  var frameRate: Int {
+    get {
+      let frameRate = userDefaults.integer(forKey: Keys.frameRate.rawValue)
+      return max(min(24, frameRate), 30)
+    }
+    set {
+      userDefaults.set(newValue, forKey: Keys.frameRate.rawValue)
+      userDefaults.synchronize()
+    }
+  }
 }

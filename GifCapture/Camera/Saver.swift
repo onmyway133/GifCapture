@@ -15,7 +15,8 @@ class Saver {
 
     Regift.createGIFFromSource(videoUrl,
                                destinationFileURL: gifUrl(),
-                               frameCount: 30, delayTime: 0, loopCount: 1)
+                               frameCount: Config.shared.frameRate,
+                               delayTime: 0, loopCount: 1)
     { [weak self] (url) in
       self?.removeFile(at: videoUrl)
       completion(url)
@@ -24,7 +25,7 @@ class Saver {
 
   func gifUrl() -> URL {
     let string = Utils.formatter.string(from: Date())
-    return Config.outputFolderUrl
+    return Config.shared.outputFolderUrl
       .appendingPathComponent(string)
       .appendingPathExtension("gif")
 

@@ -14,7 +14,6 @@
                         <windowStyleMask key="styleMask" closable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="400" height="200"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
-                        <value key="maxSize" type="size" width="100" height="200"/>
                     </window>
                     <connections>
                         <segue destination="edB-dW-QuT" kind="relationship" relationship="window.shadowedContentViewController" id="vc3-Bn-naX"/>
@@ -29,7 +28,7 @@
             <objects>
                 <viewController id="edB-dW-QuT" customClass="PreferencesViewController" customModule="GifCapture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="XYU-I8-Dzq">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28X-P3-uDr">
@@ -49,7 +48,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAe-gk-ulC">
-                                <rect key="frame" x="92" y="113" width="188" height="22"/>
+                                <rect key="frame" x="92" y="113" width="288" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="yvE-5Q-wxk">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -57,9 +56,9 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-n1-oWe">
-                                <rect key="frame" x="92" y="85" width="60" height="22"/>
+                                <rect key="frame" x="92" y="85" width="30" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="879-TA-sz6"/>
+                                    <constraint firstAttribute="width" constant="30" id="879-TA-sz6"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="5N3-L5-FXi">
                                     <font key="font" metaFont="system"/>
@@ -68,7 +67,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TPd-cT-yJt">
-                                <rect key="frame" x="227" y="13" width="59" height="32"/>
+                                <rect key="frame" x="327" y="13" width="59" height="32"/>
                                 <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4MP-xe-FYf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
