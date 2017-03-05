@@ -11,7 +11,7 @@
         <scene sceneID="JPo-4y-FX3">
             <objects>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
-                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" autoenablesItems="NO" id="AYu-sK-qS6">
                         <items>
                             <menuItem title="GifCapture" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -34,14 +34,14 @@
                             </menuItem>
                             <menuItem title="Action" id="gzP-7f-bb2">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Action" id="uYa-s1-Jhm">
+                                <menu key="submenu" title="Action" autoenablesItems="NO" id="uYa-s1-Jhm">
                                     <items>
                                         <menuItem title="Record" keyEquivalent="r" id="eGO-Ts-wyt">
                                             <connections>
                                                 <action selector="recordMenuItemTouched:" target="Ady-hI-5gd" id="0ww-bI-83N"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Stop" keyEquivalent="s" id="fo0-4z-5py">
+                                        <menuItem title="Stop" enabled="NO" keyEquivalent="s" id="fo0-4z-5py">
                                             <connections>
                                                 <action selector="stopMenuItemTouched:" target="Ady-hI-5gd" id="pey-nl-n9k"/>
                                             </connections>
