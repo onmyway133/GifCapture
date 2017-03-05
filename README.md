@@ -15,7 +15,8 @@
 # Description
 
 - Gif capture app for macOS
-- Icon from http://emojione.com/
+- Icon http://emojione.com/
+- Regift https://github.com/matthewpalmer/Regift
 
 # Features
 
