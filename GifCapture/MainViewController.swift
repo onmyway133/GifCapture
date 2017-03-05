@@ -118,6 +118,16 @@ class MainViewController: NSViewController {
 
     NSUserNotificationCenter.default.deliver(notification)
   }
+
+  // MARK: - Menu Item
+
+  @IBAction func recordMenuItemTouched(_ sender: NSMenuItem) {
+
+  }
+
+  @IBAction func stopMenuItemTouched(_ sender: NSMenuItem) {
+    
+  }
 }
 
 extension MainViewController: CameraManDelegate {

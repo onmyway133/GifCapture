@@ -25,7 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.toggleMoving(enabled: true)
   }
 
-  // MARK: - Action
+  // MARK: - MenuItem
 
   @IBAction func helpMenuItemTouched(_ sender: NSMenuItem) {
     let url = URL(string: "https://github.com/onmyway133/GifCapture")!
