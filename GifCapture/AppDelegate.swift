@@ -24,5 +24,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     window.toggleMoving(enabled: true)
   }
+
+  // MARK: - Action
+
+  @IBAction func helpMenuItemTouched(_ sender: NSMenuItem) {
+    let url = URL(string: "https://github.com/onmyway133/GifCapture")!
+    NSWorkspace.shared().open(url)
+  }
 }
 

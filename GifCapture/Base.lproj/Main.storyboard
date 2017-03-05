@@ -47,7 +47,7 @@
                                     <items>
                                         <menuItem title="GifCapture Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <action selector="helpMenuItemTouched:" target="Voe-Tx-rLC" id="Ifi-ao-XXf"/>
                                             </connections>
                                         </menuItem>
                                     </items>
