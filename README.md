@@ -1,8 +1,16 @@
 # GifCapture
 
-<img src="Images/Icon.png" alt="Icon" align="center" width="250" height="250" />
+<div align = "center">
+<img src="Images/Icon.png" width="150" height="150" />
+<br>
+<br>
+</div>
 
-![](Images/gifcapture.png)
+<div align = "center">
+<img src="Images/gifcapture.png" width="648" height="429" />
+<br>
+<br>
+</div>
 
 # Description
 
