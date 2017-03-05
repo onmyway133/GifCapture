@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  GifCapture
 //
 //  Created by Khoa Pham on 01/03/2017.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
 
   @IBOutlet weak var bottomBox: NSBox!
   @IBOutlet weak var widthTextField: NSTextField!
@@ -120,7 +120,7 @@ class ViewController: NSViewController {
   }
 }
 
-extension ViewController: CameraManDelegate {
+extension MainViewController: CameraManDelegate {
 
   func cameraMan(man: CameraMan, didChange state: State) {
     self.state = state
