@@ -23,6 +23,12 @@
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="DjE-wh-1IX"/>
+                                        <menuItem title="Preferences..." keyEquivalent="," id="mC4-9N-DX1">
+                                            <connections>
+                                                <segue destination="YsI-PE-5NO" kind="modal" id="LVP-Ua-Dcy"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Quit GifCapture" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
@@ -95,6 +101,14 @@
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="82" y="385"/>
+        </scene>
+        <!--Preferences-->
+        <scene sceneID="z0t-b4-mgx">
+            <objects>
+                <controllerPlaceholder storyboardName="Preferences" id="YsI-PE-5NO" sceneMemberID="viewController"/>
+                <customObject id="ZXE-tc-Xou" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="85"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -206,7 +220,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="804"/>
+            <point key="canvasLocation" x="75" y="955"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="3zw-ty-7a7">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="a2U-fn-SZQ">
+            <objects>
+                <windowController id="3zw-ty-7a7" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="SU9-QA-VrP">
+                        <windowStyleMask key="styleMask" closable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="400" height="200"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                    </window>
+                    <connections>
+                        <segue destination="edB-dW-QuT" kind="relationship" relationship="window.shadowedContentViewController" id="vc3-Bn-naX"/>
+                    </connections>
+                </windowController>
+                <customObject id="aQ1-k3-XK7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="122.5"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="qvx-xR-Hhr">
+            <objects>
+                <viewController id="edB-dW-QuT" customClass="PreferencesViewController" customModule="GifCapture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="XYU-I8-Dzq">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28X-P3-uDr">
+                                <rect key="frame" x="18" y="233" width="56" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="4me-jt-wuu">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSj-Kv-l63">
+                                <rect key="frame" x="18" y="208" width="70" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Frame rate" id="QWT-hX-ZPC">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAe-gk-ulC">
+                                <rect key="frame" x="92" y="233" width="368" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="yvE-5Q-wxk">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-n1-oWe">
+                                <rect key="frame" x="92" y="205" width="60" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="879-TA-sz6"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="5N3-L5-FXi">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dBu-n1-oWe" firstAttribute="leading" secondItem="IAe-gk-ulC" secondAttribute="leading" id="HXa-Cu-0wI"/>
+                            <constraint firstAttribute="trailing" secondItem="IAe-gk-ulC" secondAttribute="trailing" constant="20" id="Ibq-Ix-vIB"/>
+                            <constraint firstItem="IAe-gk-ulC" firstAttribute="leading" secondItem="28X-P3-uDr" secondAttribute="trailing" constant="20" id="MZr-fQ-AlR"/>
+                            <constraint firstItem="IAe-gk-ulC" firstAttribute="top" secondItem="XYU-I8-Dzq" secondAttribute="top" constant="15" id="QjG-GD-K8B"/>
+                            <constraint firstItem="28X-P3-uDr" firstAttribute="leading" secondItem="XYU-I8-Dzq" secondAttribute="leading" constant="20" id="itA-rK-haK"/>
+                            <constraint firstItem="XSj-Kv-l63" firstAttribute="leading" secondItem="28X-P3-uDr" secondAttribute="leading" id="qX3-0y-qIe"/>
+                            <constraint firstItem="XSj-Kv-l63" firstAttribute="top" secondItem="28X-P3-uDr" secondAttribute="bottom" constant="8" id="syt-F7-gOK"/>
+                            <constraint firstItem="28X-P3-uDr" firstAttribute="top" secondItem="XYU-I8-Dzq" secondAttribute="top" constant="20" id="vp6-2a-47g"/>
+                            <constraint firstItem="dBu-n1-oWe" firstAttribute="top" secondItem="IAe-gk-ulC" secondAttribute="bottom" constant="6" id="wHA-ak-GW1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="SfO-Dn-Q63" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="141"/>
+        </scene>
+    </scenes>
+</document>
