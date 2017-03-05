@@ -21,6 +21,7 @@ class MainViewController: NSViewController {
     didSet {
       DispatchQueue.main.async {
         self.handleStateChanged()
+        self.toggleMenuItems()
       }
     }
   }
@@ -111,6 +112,8 @@ class MainViewController: NSViewController {
     }
   }
 
+  // MARK: - Notification
+
   func showNotification(url: URL) {
     let notification = NSUserNotification()
     notification.title = "GifCapture 🏇"
@@ -121,12 +124,26 @@ class MainViewController: NSViewController {
 
   // MARK: - Menu Item
 
-  @IBAction func recordMenuItemTouched(_ sender: NSMenuItem) {
+  func toggleMenuItems() {
+    let delegate = NSApplication.shared().delegate as! AppDelegate
 
+    if case .record = state {
+      delegate.recordMenuItem.isEnabled = false
+      delegate.stopMenuItem.isEnabled = true
+    } else if case .idle = state {
+      delegate.recordMenuItem.isEnabled = true
+      delegate.stopMenuItem.isEnabled = false
+    }
+  }
+
+  @IBAction func recordMenuItemTouched(_ sender: NSMenuItem) {
+    if case .idle = state {
+      state = .start
+    }
   }
 
   @IBAction func stopMenuItemTouched(_ sender: NSMenuItem) {
-    
+    cameraMan?.stop()
   }
 }
 

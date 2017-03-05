@@ -11,6 +11,9 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+  @IBOutlet weak var recordMenuItem: NSMenuItem!
+  @IBOutlet weak var stopMenuItem: NSMenuItem!
+
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     let window = NSApplication.shared().windows.first!
 
@@ -23,6 +26,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.contentView?.layer?.borderWidth = 2
 
     window.toggleMoving(enabled: true)
+
+    // Notification
+    NSUserNotificationCenter.default.delegate = self
   }
 
   // MARK: - MenuItem
@@ -30,6 +36,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   @IBAction func helpMenuItemTouched(_ sender: NSMenuItem) {
     let url = URL(string: "https://github.com/onmyway133/GifCapture")!
     NSWorkspace.shared().open(url)
+  }
+}
+
+extension AppDelegate: NSUserNotificationCenterDelegate {
+
+  func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
+    return true
   }
 }
 

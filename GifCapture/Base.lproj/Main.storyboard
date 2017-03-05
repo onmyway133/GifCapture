@@ -31,7 +31,7 @@
                                                 <action selector="recordMenuItemTouched:" target="Ady-hI-5gd" id="0ww-bI-83N"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Stop" keyEquivalent="s" id="fo0-4z-5py">
+                                        <menuItem title="Stop" enabled="NO" keyEquivalent="s" id="fo0-4z-5py">
                                             <connections>
                                                 <action selector="stopMenuItemTouched:" target="Ady-hI-5gd" id="pey-nl-n9k"/>
                                             </connections>
@@ -63,7 +63,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="GifCapture" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="GifCapture" customModuleProvider="target">
+                    <connections>
+                        <outlet property="recordMenuItem" destination="eGO-Ts-wyt" id="Z2b-YK-rv7"/>
+                        <outlet property="stopMenuItem" destination="fo0-4z-5py" id="a9L-W3-lDF"/>
+                    </connections>
+                </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="-45"/>
