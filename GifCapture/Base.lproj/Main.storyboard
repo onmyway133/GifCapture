@@ -26,12 +26,8 @@
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
-                                        <menuItem title="Record" id="eGO-Ts-wyt">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                        </menuItem>
-                                        <menuItem title="Stop" id="fo0-4z-5py">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                        </menuItem>
+                                        <menuItem title="Record" keyEquivalent="r" id="eGO-Ts-wyt"/>
+                                        <menuItem title="Stop" keyEquivalent="s" id="fo0-4z-5py"/>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
                                         <menuItem title="Quit GifCapture" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
