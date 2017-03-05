@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		753F89B7B93D88F4CFE8E883 /* Pods_GifCaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4013FD43AD6C3CA427065F8 /* Pods_GifCaptureUITests.framework */; };
-		D200EE951E6A315B00885DBF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE941E6A315B00885DBF /* Config.swift */; };
-		D200EE971E6C268F00885DBF /* Window+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE961E6C268F00885DBF /* Window+Extensions.swift */; };
-		D2036E1F1E68CE19007C04BE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2036E1E1E68CE19007C04BE /* State.swift */; };
-		D2036E231E68D093007C04BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2036E221E68D093007C04BE /* Utils.swift */; };
-		D2036E251E68DB3B007C04BE /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2036E241E68DB3B007C04BE /* Saver.swift */; };
+		D200EEA41E6CA2F000885DBF /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE991E6CA2F000885DBF /* CameraMan.swift */; };
+		D200EEA51E6CA2F000885DBF /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE9A1E6CA2F000885DBF /* Saver.swift */; };
+		D200EEA61E6CA2F000885DBF /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE9B1E6CA2F000885DBF /* State.swift */; };
+		D200EEA71E6CA2F000885DBF /* Window+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE9D1E6CA2F000885DBF /* Window+Extensions.swift */; };
+		D200EEA81E6CA2F000885DBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE9F1E6CA2F000885DBF /* MainViewController.swift */; };
+		D200EEA91E6CA2F000885DBF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EEA21E6CA2F000885DBF /* Config.swift */; };
+		D200EEAA1E6CA2F000885DBF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EEA31E6CA2F000885DBF /* Utils.swift */; };
 		D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */; };
-		D20CD8421E675E6100DB57D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8411E675E6100DB57D0 /* MainViewController.swift */; };
 		D20CD8441E675E6100DB57D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8431E675E6100DB57D0 /* Assets.xcassets */; };
 		D20CD8471E675E6100DB57D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8451E675E6100DB57D0 /* Main.storyboard */; };
 		D20CD8521E675E6100DB57D0 /* GifCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */; };
 		D20CD85D1E675E6100DB57D0 /* GifCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */; };
-		D2F1DEE11E677E540027A75C /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F1DEE01E677E540027A75C /* CameraMan.swift */; };
 		E2221D6DF71019C7FA233B28 /* Pods_GifCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC4A9D56F79C553C701FEA8 /* Pods_GifCapture.framework */; };
 		FF6AF4B1B295F6EE41AFA87F /* Pods_GifCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91867EE54E45E197AAAB2E98 /* Pods_GifCaptureTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,14 +50,15 @@
 		91867EE54E45E197AAAB2E98 /* Pods_GifCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE5F426746B05510203A0AF /* Pods-GifCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCapture.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCapture/Pods-GifCapture.release.xcconfig"; sourceTree = "<group>"; };
 		A4013FD43AD6C3CA427065F8 /* Pods_GifCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifCaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D200EE941E6A315B00885DBF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		D200EE961E6C268F00885DBF /* Window+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Window+Extensions.swift"; sourceTree = "<group>"; };
-		D2036E1E1E68CE19007C04BE /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		D2036E221E68D093007C04BE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		D2036E241E68DB3B007C04BE /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
+		D200EE991E6CA2F000885DBF /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
+		D200EE9A1E6CA2F000885DBF /* Saver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Saver.swift; sourceTree = "<group>"; };
+		D200EE9B1E6CA2F000885DBF /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		D200EE9D1E6CA2F000885DBF /* Window+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Window+Extensions.swift"; sourceTree = "<group>"; };
+		D200EE9F1E6CA2F000885DBF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D200EEA21E6CA2F000885DBF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D200EEA31E6CA2F000885DBF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D20CD83C1E675E6100DB57D0 /* GifCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D20CD8411E675E6100DB57D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D20CD8431E675E6100DB57D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20CD8461E675E6100DB57D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20CD8481E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		D20CD8581E675E6100DB57D0 /* GifCaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifCaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureUITests.swift; sourceTree = "<group>"; };
 		D20CD85E1E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2F1DEE01E677E540027A75C /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
 		FA4FDBE7A8D8847DE78F8DD8 /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +122,48 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D200EE981E6CA2F000885DBF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				D200EE991E6CA2F000885DBF /* CameraMan.swift */,
+				D200EE9A1E6CA2F000885DBF /* Saver.swift */,
+				D200EE9B1E6CA2F000885DBF /* State.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		D200EE9C1E6CA2F000885DBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D200EE9D1E6CA2F000885DBF /* Window+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D200EE9E1E6CA2F000885DBF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D200EE9F1E6CA2F000885DBF /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D200EEA01E6CA2F000885DBF /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		D200EEA11E6CA2F000885DBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D200EEA21E6CA2F000885DBF /* Config.swift */,
+				D200EEA31E6CA2F000885DBF /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D20CD8331E675E6100DB57D0 = {
 			isa = PBXGroup;
 			children = (
@@ -147,17 +189,15 @@
 		D20CD83E1E675E6100DB57D0 /* GifCapture */ = {
 			isa = PBXGroup;
 			children = (
+				D200EE981E6CA2F000885DBF /* Camera */,
+				D200EE9C1E6CA2F000885DBF /* Extensions */,
+				D200EE9E1E6CA2F000885DBF /* Main */,
+				D200EEA01E6CA2F000885DBF /* Preference */,
+				D200EEA11E6CA2F000885DBF /* Utils */,
 				D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */,
-				D20CD8411E675E6100DB57D0 /* MainViewController.swift */,
 				D20CD8431E675E6100DB57D0 /* Assets.xcassets */,
 				D20CD8451E675E6100DB57D0 /* Main.storyboard */,
 				D20CD8481E675E6100DB57D0 /* Info.plist */,
-				D2F1DEE01E677E540027A75C /* CameraMan.swift */,
-				D2036E1E1E68CE19007C04BE /* State.swift */,
-				D2036E221E68D093007C04BE /* Utils.swift */,
-				D2036E241E68DB3B007C04BE /* Saver.swift */,
-				D200EE941E6A315B00885DBF /* Config.swift */,
-				D200EE961E6C268F00885DBF /* Window+Extensions.swift */,
 			);
 			path = GifCapture;
 			sourceTree = "<group>";
@@ -460,14 +500,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20CD8421E675E6100DB57D0 /* MainViewController.swift in Sources */,
-				D2F1DEE11E677E540027A75C /* CameraMan.swift in Sources */,
 				D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */,
-				D200EE951E6A315B00885DBF /* Config.swift in Sources */,
-				D2036E1F1E68CE19007C04BE /* State.swift in Sources */,
-				D200EE971E6C268F00885DBF /* Window+Extensions.swift in Sources */,
-				D2036E231E68D093007C04BE /* Utils.swift in Sources */,
-				D2036E251E68DB3B007C04BE /* Saver.swift in Sources */,
+				D200EEA41E6CA2F000885DBF /* CameraMan.swift in Sources */,
+				D200EEA51E6CA2F000885DBF /* Saver.swift in Sources */,
+				D200EEA91E6CA2F000885DBF /* Config.swift in Sources */,
+				D200EEA81E6CA2F000885DBF /* MainViewController.swift in Sources */,
+				D200EEA61E6CA2F000885DBF /* State.swift in Sources */,
+				D200EEA71E6CA2F000885DBF /* Window+Extensions.swift in Sources */,
+				D200EEAA1E6CA2F000885DBF /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
