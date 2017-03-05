@@ -12,9 +12,9 @@
                 <windowController id="3zw-ty-7a7" sceneMemberID="viewController">
                     <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="SU9-QA-VrP">
                         <windowStyleMask key="styleMask" closable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="400" height="200"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <value key="maxSize" type="size" width="100" height="200"/>
                     </window>
                     <connections>
                         <segue destination="edB-dW-QuT" kind="relationship" relationship="window.shadowedContentViewController" id="vc3-Bn-naX"/>
@@ -29,11 +29,11 @@
             <objects>
                 <viewController id="edB-dW-QuT" customClass="PreferencesViewController" customModule="GifCapture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="XYU-I8-Dzq">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28X-P3-uDr">
-                                <rect key="frame" x="18" y="233" width="56" height="17"/>
+                                <rect key="frame" x="18" y="113" width="56" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="4me-jt-wuu">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -41,7 +41,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSj-Kv-l63">
-                                <rect key="frame" x="18" y="208" width="70" height="17"/>
+                                <rect key="frame" x="18" y="88" width="70" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Frame rate" id="QWT-hX-ZPC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -49,7 +49,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAe-gk-ulC">
-                                <rect key="frame" x="92" y="233" width="368" height="22"/>
+                                <rect key="frame" x="92" y="113" width="188" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="yvE-5Q-wxk">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -57,7 +57,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBu-n1-oWe">
-                                <rect key="frame" x="92" y="205" width="60" height="22"/>
+                                <rect key="frame" x="92" y="85" width="60" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="879-TA-sz6"/>
                                 </constraints>
@@ -67,12 +67,27 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TPd-cT-yJt">
+                                <rect key="frame" x="227" y="13" width="59" height="32"/>
+                                <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4MP-xe-FYf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="okButtonTouched:" target="edB-dW-QuT" id="Xi1-aC-Ysk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="dBu-n1-oWe" firstAttribute="leading" secondItem="IAe-gk-ulC" secondAttribute="leading" id="HXa-Cu-0wI"/>
                             <constraint firstAttribute="trailing" secondItem="IAe-gk-ulC" secondAttribute="trailing" constant="20" id="Ibq-Ix-vIB"/>
                             <constraint firstItem="IAe-gk-ulC" firstAttribute="leading" secondItem="28X-P3-uDr" secondAttribute="trailing" constant="20" id="MZr-fQ-AlR"/>
                             <constraint firstItem="IAe-gk-ulC" firstAttribute="top" secondItem="XYU-I8-Dzq" secondAttribute="top" constant="15" id="QjG-GD-K8B"/>
+                            <constraint firstAttribute="bottom" secondItem="TPd-cT-yJt" secondAttribute="bottom" constant="20" id="c8E-h2-oWW"/>
+                            <constraint firstAttribute="trailing" secondItem="TPd-cT-yJt" secondAttribute="trailing" constant="20" id="ekx-k2-pEF"/>
                             <constraint firstItem="28X-P3-uDr" firstAttribute="leading" secondItem="XYU-I8-Dzq" secondAttribute="leading" constant="20" id="itA-rK-haK"/>
                             <constraint firstItem="XSj-Kv-l63" firstAttribute="leading" secondItem="28X-P3-uDr" secondAttribute="leading" id="qX3-0y-qIe"/>
                             <constraint firstItem="XSj-Kv-l63" firstAttribute="top" secondItem="28X-P3-uDr" secondAttribute="bottom" constant="8" id="syt-F7-gOK"/>
@@ -80,6 +95,10 @@
                             <constraint firstItem="dBu-n1-oWe" firstAttribute="top" secondItem="IAe-gk-ulC" secondAttribute="bottom" constant="6" id="wHA-ak-GW1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="frameRateTextField" destination="dBu-n1-oWe" id="KKm-oI-gUl"/>
+                        <outlet property="locationTextField" destination="IAe-gk-ulC" id="O8B-6r-5pk"/>
+                    </connections>
                 </viewController>
                 <customObject id="SfO-Dn-Q63" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
