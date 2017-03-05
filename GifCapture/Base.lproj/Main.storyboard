@@ -24,22 +24,26 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
-                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
-                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Quit GifCapture" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Action" id="gzP-7f-bb2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Action" id="uYa-s1-Jhm">
+                                    <items>
                                         <menuItem title="Record" keyEquivalent="r" id="eGO-Ts-wyt">
                                             <connections>
                                                 <action selector="recordMenuItemTouched:" target="Ady-hI-5gd" id="0ww-bI-83N"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Stop" enabled="NO" keyEquivalent="s" id="fo0-4z-5py">
+                                        <menuItem title="Stop" keyEquivalent="s" id="fo0-4z-5py">
                                             <connections>
                                                 <action selector="stopMenuItemTouched:" target="Ady-hI-5gd" id="pey-nl-n9k"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit GifCapture" keyEquivalent="q" id="4sb-4s-VLi">
-                                            <connections>
-                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
                                         </menuItem>
                                     </items>
