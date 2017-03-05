@@ -25,7 +25,7 @@ class Saver {
 
   func gifUrl() -> URL {
     let string = Utils.formatter.string(from: Date())
-    return Config.shared.outputFolderUrl
+    return URL(fileURLWithPath: Config.shared.location)
       .appendingPathComponent(string)
       .appendingPathExtension("gif")
 

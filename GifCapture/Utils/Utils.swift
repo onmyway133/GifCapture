@@ -15,4 +15,13 @@ struct Utils {
     formatter.dateFormat = "yyyy-MM-dd HH.mm.ss"
     return formatter
   }()
+
+  static func fileExists(path: String, isDirectory: Bool) -> Bool {
+    var isDir: ObjCBool = false
+    if FileManager.default.fileExists(atPath: path, isDirectory: &isDir) {
+      return isDir.boolValue
+    }
+
+    return false
+  }
 }

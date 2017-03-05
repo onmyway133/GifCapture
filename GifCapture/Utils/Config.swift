@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Config {
+class Config {
 
   enum Keys: String {
     case location
@@ -22,10 +22,10 @@ struct Config {
     self.userDefaults = userDefaults
   }
 
-  var outputFolderUrl: URL {
+  var location: String {
     get {
-      let location = userDefaults.url(forKey: Keys.location.rawValue)
-      return location ?? URL(fileURLWithPath: NSHomeDirectory()).appendingPathComponent("Downloads")
+      let location = userDefaults.string(forKey: Keys.location.rawValue)
+      return location ?? NSHomeDirectory().appending("/Downloads")
     }
     set {
       userDefaults.set(newValue, forKey: Keys.location.rawValue)

@@ -16,7 +16,7 @@ class PreferencesViewController: NSViewController {
   override func viewWillAppear() {
     super.viewWillAppear()
 
-    locationTextField.stringValue = Config.shared.outputFolderUrl.absoluteString
+    locationTextField.stringValue = Config.shared.location
     frameRateTextField.stringValue = "\(Config.shared.frameRate)"
   }
 
@@ -28,7 +28,21 @@ class PreferencesViewController: NSViewController {
   }
 
   // MARK: - Action
+
   @IBAction func okButtonTouched(_ sender: NSButton) {
+    checkAndSave()
     view.window?.close()
+  }
+
+  // MARK: - Save
+
+  func checkAndSave() {
+    if Utils.fileExists(path: locationTextField.stringValue, isDirectory: true) {
+      Config.shared.location = locationTextField.stringValue
+    }
+
+    if let frameRate = Int(frameRateTextField.stringValue) {
+      Config.shared.frameRate = frameRate
+    }
   }
 }
