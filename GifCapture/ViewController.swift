@@ -33,6 +33,7 @@ class ViewController: NSViewController {
 
   func setup() {
     stopButton.isEnabled = false
+    toggleWindow(enabled: true)
   }
 
   override func viewDidLayout() {
@@ -117,7 +118,7 @@ class ViewController: NSViewController {
       break
     case .finish(let url):
       if let url = url {
-
+        showNotification(url: url)
       } else {
 
       }
@@ -128,6 +129,14 @@ class ViewController: NSViewController {
       stopButton.isEnabled = false
       toggleWindow(enabled: true)
     }
+  }
+
+  func showNotification(url: URL) {
+    let notification = NSUserNotification()
+    notification.title = "GifCapture 🏇"
+    notification.informativeText = url.absoluteString
+
+    NSUserNotificationCenter.default.deliver(notification)
   }
 }
 
