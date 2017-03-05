@@ -33,7 +33,6 @@ class ViewController: NSViewController {
 
   func setup() {
     stopButton.isEnabled = false
-    toggleWindow(enabled: true)
   }
 
   override func viewDidLayout() {
@@ -60,25 +59,6 @@ class ViewController: NSViewController {
 
   @IBAction func stopButtonTouched(_ sender: NSButton) {
     cameraMan?.stop()
-  }
-
-  // MARK: - Window
-
-  func toggleWindow(enabled: Bool) {
-    guard let window = view.window else {
-      return
-    }
-
-    if enabled {
-      window.styleMask.update(with: .resizable)
-      window.isMovable = true
-      window.isMovableByWindowBackground = true
-      window.level = Int(CGWindowLevelForKey(.normalWindow))
-    } else {
-      window.styleMask.remove(.resizable)
-      window.isMovable = false
-      window.level = Int(CGWindowLevelForKey(.floatingWindow))
-    }
   }
 
   // MARK: - Frame
@@ -109,7 +89,7 @@ class ViewController: NSViewController {
     case .record:
       recordButton.title = "Pause"
       stopButton.isEnabled = true
-      toggleWindow(enabled: false)
+      view.window?.toggleMoving(enabled: false)
     case .pause:
       recordButton.title = "Resume"
     case .resume:
@@ -127,7 +107,7 @@ class ViewController: NSViewController {
       cameraMan = nil
       recordButton.title = "Record"
       stopButton.isEnabled = false
-      toggleWindow(enabled: true)
+      view.window?.toggleMoving(enabled: true)
     }
   }
 
