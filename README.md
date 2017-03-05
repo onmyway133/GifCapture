@@ -24,6 +24,9 @@
 - [x] Key equivalent (Cmd+R, Cmd+S)
 - [x] Open captured gif from notification banner
 - [x] Preferences
+- [ ] Progress HUD
+- [ ] Multiple screens
+- [ ] Select application to capture
 
 ## Author
 
