@@ -44,5 +44,14 @@ extension AppDelegate: NSUserNotificationCenterDelegate {
   func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
     return true
   }
+
+  func userNotificationCenter(_ center: NSUserNotificationCenter, didActivate notification: NSUserNotification) {
+    guard let text = notification.informativeText,
+      let url = URL(string: text) else {
+      return
+    }
+
+    NSWorkspace.shared().activateFileViewerSelecting([url])
+  }
 }
 

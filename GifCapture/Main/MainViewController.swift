@@ -118,6 +118,8 @@ class MainViewController: NSViewController {
     let notification = NSUserNotification()
     notification.title = "GifCapture 🏇"
     notification.informativeText = url.absoluteString
+    notification.hasActionButton = true
+    notification.actionButtonTitle = "Open"
 
     NSUserNotificationCenter.default.deliver(notification)
   }
