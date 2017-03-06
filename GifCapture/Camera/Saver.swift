@@ -11,11 +11,31 @@ import NSGIF
 
 class Saver {
 
-  func save(videoUrl: URL, completion: @escaping (URL?) -> Void) {
+  typealias Completion = (URL?) -> Void
+
+  func save(videoUrl: URL, completion: @escaping Completion) {
 
     NSGIF.optimalGIFfromURL(videoUrl, loopCount: 0) { [weak self] (url) in
-      self?.removeFile(at: videoUrl)
-      completion(url)
+      self?.copy(url: url, completion: completion)
+    }
+  }
+
+  func copy(url: URL?, completion: @escaping Completion) {
+    guard let url = url else {
+      completion(nil)
+      return
+    }
+
+    defer {
+      removeFile(at: url)
+    }
+
+    do {
+      let gifUrl = self.gifUrl()
+      try FileManager.default.copyItem(at: url, to: gifUrl)
+      completion(gifUrl)
+    } catch {
+      completion(nil)
     }
   }
 
@@ -24,7 +44,6 @@ class Saver {
     return URL(fileURLWithPath: Config.shared.location)
       .appendingPathComponent(string)
       .appendingPathExtension("gif")
-
   }
 
   func removeFile(at url: URL) {
