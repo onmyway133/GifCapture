@@ -32,15 +32,4 @@ class Config {
       userDefaults.synchronize()
     }
   }
-
-  var frameRate: Int {
-    get {
-      let frameRate = userDefaults.integer(forKey: Keys.frameRate.rawValue)
-      return max(min(24, frameRate), 30)
-    }
-    set {
-      userDefaults.set(newValue, forKey: Keys.frameRate.rawValue)
-      userDefaults.synchronize()
-    }
-  }
 }

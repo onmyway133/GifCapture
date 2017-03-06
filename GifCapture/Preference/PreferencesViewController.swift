@@ -11,13 +11,11 @@ import Cocoa
 class PreferencesViewController: NSViewController {
 
   @IBOutlet weak var locationTextField: NSTextField!
-  @IBOutlet weak var frameRateTextField: NSTextField!
 
   override func viewWillAppear() {
     super.viewWillAppear()
 
     locationTextField.stringValue = Config.shared.location
-    frameRateTextField.stringValue = "\(Config.shared.frameRate)"
   }
 
   override func viewDidAppear() {
@@ -39,10 +37,6 @@ class PreferencesViewController: NSViewController {
   func checkAndSave() {
     if Utils.fileExists(path: locationTextField.stringValue, isDirectory: true) {
       Config.shared.location = locationTextField.stringValue
-    }
-
-    if let frameRate = Int(frameRateTextField.stringValue) {
-      Config.shared.frameRate = frameRate
     }
   }
 }

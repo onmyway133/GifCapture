@@ -15,8 +15,8 @@ class Saver {
 
     Regift.createGIFFromSource(videoUrl,
                                destinationFileURL: gifUrl(),
-                               frameCount: Config.shared.frameRate,
-                               delayTime: 0, loopCount: 1)
+                               frameCount: 16,
+                               delayTime: 0.2, loopCount: 1)
     { [weak self] (url) in
       self?.removeFile(at: videoUrl)
       completion(url)
