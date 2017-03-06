@@ -28,6 +28,12 @@
 - [ ] Multiple screens
 - [ ] Select application to capture
 
+# Demo
+
+![](Images/g1.gif)
+![](Images/g2.gif)
+![](Images/g3.gif)
+
 ## Author
 
 Khoa Pham, onmyway133@gmail.com
