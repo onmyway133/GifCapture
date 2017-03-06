@@ -34,6 +34,10 @@
 ![](Images/g2.gif)
 ![](Images/g3.gif)
 
+# How to use
+
+- Get the binary from https://github.com/onmyway133/GifCapture/releases
+
 ## Author
 
 Khoa Pham, onmyway133@gmail.com
