@@ -30,9 +30,9 @@
 
 # Demo
 
-<img src="Images/g1.gif" width="150" height="150" />
-<img src="Images/g2.gif" width="150" height="150" />
-<img src="Images/g3.gif" width="150" height="150" />
+![](Images/g1.gif)
+![](Images/g2.gif)
+![](Images/g3.gif)
 
 ## Author
 
