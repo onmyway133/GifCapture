@@ -28,11 +28,11 @@
             <objects>
                 <viewController id="edB-dW-QuT" customClass="PreferencesViewController" customModule="GifCapture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="XYU-I8-Dzq">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28X-P3-uDr">
-                                <rect key="frame" x="18" y="113" width="56" height="17"/>
+                                <rect key="frame" x="18" y="63" width="56" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Location" id="4me-jt-wuu">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -40,7 +40,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAe-gk-ulC">
-                                <rect key="frame" x="92" y="113" width="288" height="22"/>
+                                <rect key="frame" x="92" y="63" width="288" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="yvE-5Q-wxk">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>

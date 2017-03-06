@@ -15,13 +15,13 @@ class MainViewController: NSViewController {
   @IBOutlet weak var heightTextField: NSTextField!
   @IBOutlet weak var recordButton: NSButton!
   @IBOutlet weak var stopButton: NSButton!
+  var loadingIndicator: LoadingIndicator!
 
   var cameraMan: CameraMan?
   var state: State = .idle {
     didSet {
       DispatchQueue.main.async {
         self.handleStateChanged()
-        self.toggleMenuItems()
       }
     }
   }
@@ -34,6 +34,17 @@ class MainViewController: NSViewController {
 
   func setup() {
     stopButton.isEnabled = false
+
+    loadingIndicator = LoadingIndicator()
+    view.addSubview(loadingIndicator)
+    Utils.constrain(constraints: [
+      loadingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      loadingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+      loadingIndicator.widthAnchor.constraint(equalToConstant: 100),
+      loadingIndicator.heightAnchor.constraint(equalToConstant: 100)
+    ])
+    
+    loadingIndicator.hide()
   }
 
   override func viewDidLayout() {
@@ -97,14 +108,16 @@ class MainViewController: NSViewController {
       cameraMan?.record()
     case .record:
       recordButton.title = "Pause"
-      stopButton.isEnabled = true
+      toggleStopButton(enabled: true)
       view.window?.toggleMoving(enabled: false)
     case .pause:
       recordButton.title = "Resume"
     case .resume:
       recordButton.title = "Pause"
     case .stop:
-      break
+      toggleRecordButton(enabled: false)
+      toggleStopButton(enabled: false)
+      loadingIndicator.show()
     case .finish(let url):
       if let url = url {
         showNotification(url: url)
@@ -115,7 +128,9 @@ class MainViewController: NSViewController {
     case .idle:
       cameraMan = nil
       recordButton.title = "Record"
-      stopButton.isEnabled = false
+      toggleStopButton(enabled: false)
+      toggleRecordButton(enabled: true)
+      loadingIndicator.hide()
       view.window?.toggleMoving(enabled: true)
     }
   }
@@ -134,16 +149,14 @@ class MainViewController: NSViewController {
 
   // MARK: - Menu Item
 
-  func toggleMenuItems() {
-    let delegate = NSApplication.shared().delegate as! AppDelegate
+  func toggleRecordButton(enabled: Bool) {
+    recordButton.isEnabled = enabled
+    (NSApplication.shared().delegate as! AppDelegate).recordMenuItem.isEnabled = enabled
+  }
 
-    if case .record = state {
-      delegate.recordMenuItem.isEnabled = false
-      delegate.stopMenuItem.isEnabled = true
-    } else if case .idle = state {
-      delegate.recordMenuItem.isEnabled = true
-      delegate.stopMenuItem.isEnabled = false
-    }
+  func toggleStopButton(enabled: Bool) {
+    stopButton.isEnabled = enabled
+    (NSApplication.shared().delegate as! AppDelegate).stopMenuItem.isEnabled = enabled
   }
 
   @IBAction func recordMenuItemTouched(_ sender: NSMenuItem) {

@@ -15,13 +15,14 @@
 		D200EEA81E6CA2F000885DBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE9F1E6CA2F000885DBF /* MainViewController.swift */; };
 		D200EEA91E6CA2F000885DBF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EEA21E6CA2F000885DBF /* Config.swift */; };
 		D200EEAA1E6CA2F000885DBF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EEA31E6CA2F000885DBF /* Utils.swift */; };
+		D207442E1E6E102F0031819D /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D207442D1E6E102F0031819D /* Preferences.storyboard */; };
+		D20744371E6E1A000031819D /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20744361E6E1A000031819D /* LoadingIndicator.swift */; };
 		D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */; };
 		D20CD8441E675E6100DB57D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8431E675E6100DB57D0 /* Assets.xcassets */; };
 		D20CD8471E675E6100DB57D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20CD8451E675E6100DB57D0 /* Main.storyboard */; };
 		D20CD8521E675E6100DB57D0 /* GifCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */; };
 		D20CD85D1E675E6100DB57D0 /* GifCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */; };
 		D26E16441E6CB136002454A9 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E16431E6CB136002454A9 /* PreferencesViewController.swift */; };
-		D26E16461E6CB1AE002454A9 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D26E16451E6CB1AE002454A9 /* Preferences.storyboard */; };
 		E2221D6DF71019C7FA233B28 /* Pods_GifCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC4A9D56F79C553C701FEA8 /* Pods_GifCapture.framework */; };
 		FF6AF4B1B295F6EE41AFA87F /* Pods_GifCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91867EE54E45E197AAAB2E98 /* Pods_GifCaptureTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,8 @@
 		D200EE9F1E6CA2F000885DBF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D200EEA21E6CA2F000885DBF /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D200EEA31E6CA2F000885DBF /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D207442D1E6E102F0031819D /* Preferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		D20744361E6E1A000031819D /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		D20CD83C1E675E6100DB57D0 /* GifCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20CD8431E675E6100DB57D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureUITests.swift; sourceTree = "<group>"; };
 		D20CD85E1E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D26E16431E6CB136002454A9 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
-		D26E16451E6CB1AE002454A9 /* Preferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
 		FA4FDBE7A8D8847DE78F8DD8 /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 		D200EE9E1E6CA2F000885DBF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D20CD8451E675E6100DB57D0 /* Main.storyboard */,
 				D200EE9F1E6CA2F000885DBF /* MainViewController.swift */,
 			);
 			path = Main;
@@ -155,6 +158,7 @@
 		D200EEA01E6CA2F000885DBF /* Preference */ = {
 			isa = PBXGroup;
 			children = (
+				D207442D1E6E102F0031819D /* Preferences.storyboard */,
 				D26E16431E6CB136002454A9 /* PreferencesViewController.swift */,
 			);
 			path = Preference;
@@ -163,6 +167,7 @@
 		D200EEA11E6CA2F000885DBF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D20744361E6E1A000031819D /* LoadingIndicator.swift */,
 				D200EEA21E6CA2F000885DBF /* Config.swift */,
 				D200EEA31E6CA2F000885DBF /* Utils.swift */,
 			);
@@ -201,9 +206,7 @@
 				D200EEA11E6CA2F000885DBF /* Utils */,
 				D20CD83F1E675E6100DB57D0 /* AppDelegate.swift */,
 				D20CD8431E675E6100DB57D0 /* Assets.xcassets */,
-				D20CD8451E675E6100DB57D0 /* Main.storyboard */,
 				D20CD8481E675E6100DB57D0 /* Info.plist */,
-				D26E16451E6CB1AE002454A9 /* Preferences.storyboard */,
 			);
 			path = GifCapture;
 			sourceTree = "<group>";
@@ -342,7 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26E16461E6CB1AE002454A9 /* Preferences.storyboard in Resources */,
+				D207442E1E6E102F0031819D /* Preferences.storyboard in Resources */,
 				D20CD8441E675E6100DB57D0 /* Assets.xcassets in Resources */,
 				D20CD8471E675E6100DB57D0 /* Main.storyboard in Resources */,
 			);
@@ -509,6 +512,7 @@
 			files = (
 				D20CD8401E675E6100DB57D0 /* AppDelegate.swift in Sources */,
 				D200EEA41E6CA2F000885DBF /* CameraMan.swift in Sources */,
+				D20744371E6E1A000031819D /* LoadingIndicator.swift in Sources */,
 				D26E16441E6CB136002454A9 /* PreferencesViewController.swift in Sources */,
 				D200EEA51E6CA2F000885DBF /* Saver.swift in Sources */,
 				D200EEA91E6CA2F000885DBF /* Config.swift in Sources */,
@@ -557,6 +561,7 @@
 				D20CD8461E675E6100DB57D0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

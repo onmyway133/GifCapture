@@ -6,7 +6,7 @@
 //  Copyright © 2017 Fantageek. All rights reserved.
 //
 
-import Foundation
+import Cocoa
 
 struct Utils {
 
@@ -23,5 +23,12 @@ struct Utils {
     }
 
     return false
+  }
+
+  static func constrain(constraints: [NSLayoutConstraint]) {
+    constraints.forEach {
+      ($0.firstItem as? NSView)?.translatesAutoresizingMaskIntoConstraints = false
+      $0.isActive = true
+    }
   }
 }
