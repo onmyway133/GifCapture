@@ -39,10 +39,10 @@ class MainViewController: NSViewController {
   override func viewDidLayout() {
     super.viewDidLayout()
 
-    let frame = recordFrame()
+    let size = scaleFactorRecordSize()
 
-    widthTextField.stringValue = String(format: "%.0f", frame.size.width)
-    heightTextField.stringValue = String(format: "%.0f", frame.size.height)
+    widthTextField.stringValue = String(format: "%.0f", size.width)
+    heightTextField.stringValue = String(format: "%.0f", size.height)
   }
 
   // MARK: - Action
@@ -77,6 +77,14 @@ class MainViewController: NSViewController {
                   y: window.frame.origin.y + titleHeight + someValue + lineWidth,
                   width: view.frame.size.width - lineWidth * 2,
                   height: view.frame.size.height - bottomBox.frame.size.height - someValue - lineWidth)
+  }
+
+  func scaleFactorRecordSize() -> CGSize {
+    let frame = recordFrame()
+    let scale = view.window?.screen?.backingScaleFactor ?? 2.0
+
+    return CGSize(width: frame.size.width * scale,
+                  height: frame.size.height * scale)
   }
 
   // MARK: - State
