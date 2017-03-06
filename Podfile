@@ -1,7 +1,7 @@
 target 'GifCapture' do
   use_frameworks!
 
-  pod 'Regift', '~> 1.3'
+  pod 'NSGIF', '~> 1.2'
 
   target 'GifCaptureTests' do
     inherit! :search_paths

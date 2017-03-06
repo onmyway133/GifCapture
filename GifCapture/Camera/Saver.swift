@@ -7,17 +7,13 @@
 //
 
 import Foundation
-import Regift
+import NSGIF
 
 class Saver {
 
   func save(videoUrl: URL, completion: @escaping (URL?) -> Void) {
 
-    Regift.createGIFFromSource(videoUrl,
-                               destinationFileURL: gifUrl(),
-                               frameCount: 16,
-                               delayTime: 0.2, loopCount: 0)
-    { [weak self] (url) in
+    NSGIF.optimalGIFfromURL(videoUrl, loopCount: 0) { [weak self] (url) in
       self?.removeFile(at: videoUrl)
       completion(url)
     }

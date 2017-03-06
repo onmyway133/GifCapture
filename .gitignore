@@ -27,7 +27,7 @@ DerivedData
 *.xcuserstate
 
 # CocoaPods
-Pods
+#Pods
 
 # Carthage
 Carthage

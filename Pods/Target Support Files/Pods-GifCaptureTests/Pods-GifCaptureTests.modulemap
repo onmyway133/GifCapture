@@ -1,0 +1,6 @@
+framework module Pods_GifCaptureTests {
+  umbrella header "Pods-GifCaptureTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
