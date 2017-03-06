@@ -15,8 +15,11 @@ class LoadingIndicator: NSBox {
   override init(frame frameRect: NSRect) {
     super.init(frame: frameRect)
 
+    boxType = .custom
     title = ""
-    fillColor = NSColor.red
+    fillColor = NSColor.white.withAlphaComponent(0.5)
+    cornerRadius = 5
+    borderType = .noBorder
 
     progressIndicator = NSProgressIndicator()
     progressIndicator.style = .spinningStyle
