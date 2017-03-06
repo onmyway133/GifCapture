@@ -134,7 +134,10 @@ typedef NS_ENUM(NSInteger, GIFSize) {
     NSString *temporaryFile = [NSTemporaryDirectory() stringByAppendingString:fileName];
     NSURL *fileURL = [NSURL fileURLWithPath:temporaryFile];
     CGImageDestinationRef destination = CGImageDestinationCreateWithURL((__bridge CFURLRef)fileURL, kUTTypeGIF , frameCount, NULL);
-    
+
+    // FIX: https://github.com/NSRare/NSGIF/pull/23/files
+    CGImageDestinationSetProperties(destination, (CFDictionaryRef)fileProperties);
+
     if (fileURL == nil)
         return nil;
 
@@ -173,8 +176,7 @@ typedef NS_ENUM(NSInteger, GIFSize) {
         CGImageRelease(imageRef);
     }
     CGImageRelease(previousImageRefCopy);
-    
-    CGImageDestinationSetProperties(destination, (CFDictionaryRef)fileProperties);
+
     // Finalize the GIF
     if (!CGImageDestinationFinalize(destination)) {
         NSLog(@"Failed to finalize GIF destination: %@", error);
