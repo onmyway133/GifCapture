@@ -38,6 +38,7 @@
 # How to use
 
 - Get the binary from https://github.com/onmyway133/GifCapture/releases
+- Brew `brew cask install gifcapture`
 
 ## Author
 
