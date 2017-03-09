@@ -37,8 +37,11 @@
 
 # How to use
 
+### Binary
 - Get the binary from https://github.com/onmyway133/GifCapture/releases
-- Brew `brew cask install gifcapture`
+
+### Brew Cask
+- Run `brew cask install gifcapture`
 
 ## Author
 
