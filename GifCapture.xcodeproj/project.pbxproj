@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A79DA8E1E8C254E00058C9C /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A79DA8D1E8C254E00058C9C /* MBProgressHUD.m */; };
 		753F89B7B93D88F4CFE8E883 /* Pods_GifCaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4013FD43AD6C3CA427065F8 /* Pods_GifCaptureUITests.framework */; };
 		D200EEA41E6CA2F000885DBF /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE991E6CA2F000885DBF /* CameraMan.swift */; };
 		D200EEA51E6CA2F000885DBF /* Saver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200EE9A1E6CA2F000885DBF /* Saver.swift */; };
@@ -45,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A79DA8B1E8C254D00058C9C /* GifCapture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GifCapture-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A79DA8C1E8C254E00058C9C /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		2A79DA8D1E8C254E00058C9C /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		2B2523A937D9CBBE1B82A712 /* Pods-GifCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
 		565F8D412AFA5B3231244FC8 /* Pods-GifCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A63DE095C30461F3A77D650 /* Pods-GifCaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,16 @@
 				A4013FD43AD6C3CA427065F8 /* Pods_GifCaptureUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A79DA8A1E8C254100058C9C /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2A79DA8C1E8C254E00058C9C /* MBProgressHUD.h */,
+				2A79DA8D1E8C254E00058C9C /* MBProgressHUD.m */,
+				2A79DA8B1E8C254D00058C9C /* GifCapture-Bridging-Header.h */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		485F78FEC54BBA3DA1BD40D1 /* Pods */ = {
@@ -199,6 +213,7 @@
 		D20CD83E1E675E6100DB57D0 /* GifCapture */ = {
 			isa = PBXGroup;
 			children = (
+				2A79DA8A1E8C254100058C9C /* MBProgressHUD */,
 				D200EE981E6CA2F000885DBF /* Camera */,
 				D200EE9C1E6CA2F000885DBF /* Extensions */,
 				D200EE9E1E6CA2F000885DBF /* Main */,
@@ -306,6 +321,7 @@
 				TargetAttributes = {
 					D20CD83B1E675E6100DB57D0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D20CD84C1E675E6100DB57D0 = {
@@ -514,6 +530,7 @@
 				D200EEA41E6CA2F000885DBF /* CameraMan.swift in Sources */,
 				D20744371E6E1A000031819D /* LoadingIndicator.swift in Sources */,
 				D26E16441E6CB136002454A9 /* PreferencesViewController.swift in Sources */,
+				2A79DA8E1E8C254E00058C9C /* MBProgressHUD.m in Sources */,
 				D200EEA51E6CA2F000885DBF /* Saver.swift in Sources */,
 				D200EEA91E6CA2F000885DBF /* Config.swift in Sources */,
 				D200EEA81E6CA2F000885DBF /* MainViewController.swift in Sources */,
@@ -662,12 +679,15 @@
 			baseConfigurationReference = 60D6F78C276C230867BD2300 /* Pods-GifCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GifCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifCapture/GifCapture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -677,12 +697,14 @@
 			baseConfigurationReference = 9AE5F426746B05510203A0AF /* Pods-GifCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GifCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GifCapture/GifCapture-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

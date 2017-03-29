@@ -25,15 +25,15 @@
 - [x] Key equivalent (Cmd+R, Cmd+S)
 - [x] Open captured gif from notification banner
 - [x] Preferences
-- [ ] Progress HUD
+- [x] Progress HUD
 - [ ] Multiple screens
 - [ ] Select application to capture
 
 # Demo
 
-![](Images/g1.gif)
-![](Images/g2.gif)
-![](Images/g3.gif)
+![][image-1]
+![][image-2]
+![][image-3]
 
 # How to use
 
@@ -49,4 +49,10 @@ Khoa Pham, onmyway133@gmail.com
 
 ## License
 
-**GifCapture** is available under the MIT license. See the [LICENSE](https://github.com/onmyway133/GifCapture/blob/master/LICENSE.md) file for more info.
+**GifCapture** is available under the MIT license. See the [LICENSE][1] file for more info.
+
+[1]:	https://github.com/onmyway133/GifCapture/blob/master/LICENSE.md
+
+[image-1]:	Images/g1.gif
+[image-2]:	Images/g2.gif
+[image-3]:	Images/g3.gif

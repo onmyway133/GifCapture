@@ -39,6 +39,7 @@ class CameraMan: NSObject {
   func stop() {
     output.stopRecording()
     session.stopRunning()
+    
   }
 
   // MARK: - Logic
