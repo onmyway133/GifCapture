@@ -32,9 +32,9 @@
 # Demo
 
 <div align = "left">
-<img src="Images/g1.gif" width="300" height="250" />
-<img src="Images/g2.gif" width="300" height="250" />
-<img src="Images/g3.gif" width="300" height="250" />
+<img src="Images/g1.gif" width="240" height="200" />
+<img src="Images/g2.gif" width="240" height="200" />
+<img src="Images/g3.gif" width="240" height="200" />
 </div>
 
 # How to use
