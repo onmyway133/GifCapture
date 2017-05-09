@@ -33,11 +33,7 @@
 
 <div align = "left">
 <img src="Images/g1.gif" width="300" height="250" />
-</div>
-<div align = "left">
 <img src="Images/g2.gif" width="300" height="250" />
-</div>
-<div align = "left">
 <img src="Images/g3.gif" width="300" height="250" />
 </div>
 
