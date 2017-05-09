@@ -31,9 +31,15 @@
 
 # Demo
 
-![](Images/g1.gif)
-![](Images/g2.gif)
-![](Images/g3.gif)
+<div align = "left">
+<img src="Images/gif1.gif" width="300" height="250" />
+</div>
+<div align = "left">
+<img src="Images/gif2.gif" width="300" height="250" />
+</div>
+<div align = "left">
+<img src="Images/gif3.gif" width="300" height="250" />
+</div>
 
 # How to use
 
