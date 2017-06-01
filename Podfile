@@ -1,7 +1,7 @@
 target 'GifCapture' do
   use_frameworks!
 
-  pod 'NSGIF', '~> 1.2'
+  pod 'NSGIF', :git => 'https://github.com/NSRare/NSGIF'
 
   target 'GifCaptureTests' do
     inherit! :search_paths
