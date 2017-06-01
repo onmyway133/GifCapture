@@ -23,6 +23,7 @@
 		D20CD8521E675E6100DB57D0 /* GifCaptureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD8511E675E6100DB57D0 /* GifCaptureTests.swift */; };
 		D20CD85D1E675E6100DB57D0 /* GifCaptureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */; };
 		D26E16441E6CB136002454A9 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E16431E6CB136002454A9 /* PreferencesViewController.swift */; };
+		D2D714001EE053010028611E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D713FF1EE053010028611E /* MainWindowController.swift */; };
 		E2221D6DF71019C7FA233B28 /* Pods_GifCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC4A9D56F79C553C701FEA8 /* Pods_GifCapture.framework */; };
 		FF6AF4B1B295F6EE41AFA87F /* Pods_GifCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91867EE54E45E197AAAB2E98 /* Pods_GifCaptureTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureUITests.swift; sourceTree = "<group>"; };
 		D20CD85E1E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D26E16431E6CB136002454A9 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		D2D713FF1EE053010028611E /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		FA4FDBE7A8D8847DE78F8DD8 /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			children = (
 				D20CD8451E675E6100DB57D0 /* Main.storyboard */,
 				D200EE9F1E6CA2F000885DBF /* MainViewController.swift */,
+				D2D713FF1EE053010028611E /* MainWindowController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				D200EEA91E6CA2F000885DBF /* Config.swift in Sources */,
 				D200EEA81E6CA2F000885DBF /* MainViewController.swift in Sources */,
 				D200EEA61E6CA2F000885DBF /* State.swift in Sources */,
+				D2D714001EE053010028611E /* MainWindowController.swift in Sources */,
 				D200EEA71E6CA2F000885DBF /* Window+Extensions.swift in Sources */,
 				D200EEAA1E6CA2F000885DBF /* Utils.swift in Sources */,
 			);
