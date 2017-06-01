@@ -25,7 +25,8 @@ typedef NS_ENUM(NSInteger, GIFSize) {
 
 + (void)optimalGIFfromURL:(NSURL*)videoURL loopCount:(int)loopCount completion:(void(^)(NSURL *GifURL))completionBlock {
 
-    float delayTime = 0.02f;
+    // IMPORTANT: This has been changed from 0.02 to 0.2
+    float delayTime = 0.2f;
     
     // Create properties dictionaries
     NSDictionary *fileProperties = [self filePropertiesWithLoopCount:loopCount];
@@ -48,7 +49,9 @@ typedef NS_ENUM(NSInteger, GIFSize) {
     
     // Get the length of the video in seconds
     float videoLength = (float)asset.duration.value/asset.duration.timescale;
-    int framesPerSecond = 4;
+
+    // IMPORTANT: This has been changed from 4 to 5
+    int framesPerSecond = 5;
     int frameCount = videoLength*framesPerSecond;
     
     // How far along the video track we want to move, in seconds.
