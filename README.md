@@ -16,6 +16,7 @@
 
 - Gif capture app for macOS
 - Featured on Product Hunt https://www.producthunt.com/posts/gifcapture
+- Featured on Softpedia http://mac.softpedia.com/get/Graphics/GifCapture.shtml
 - Icon http://emojione.com/
 - NSGIF https://github.com/NSRare/NSGIF
 
