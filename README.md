@@ -12,13 +12,13 @@
 <br>
 </div>
 
-# Description
+## Description
 
 - Gif capture app for macOS
 - Featured on Product Hunt https://www.producthunt.com/posts/gifcapture
 - Featured on Softpedia http://mac.softpedia.com/get/Graphics/GifCapture.shtml
 
-# Features
+### Features
 
 - [x] Resizable window
 - [x] Key equivalent (Cmd+R, Cmd+S)
@@ -28,7 +28,7 @@
 - [ ] Multiple screens
 - [ ] Select application to capture
 
-# Demo
+### Demo
 
 <div align = "left">
 <img src="Images/g1.gif" width="240" height="200" />
@@ -38,10 +38,10 @@
 
 ## How to install
 
-### Manually 
+#### Manually 
 - Get the binary from https://github.com/onmyway133/GifCapture/releases
 
-### Brew Cask
+#### Brew Cask
 - Run `brew cask install gifcapture`
 
 ## How to use
