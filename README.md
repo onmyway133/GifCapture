@@ -17,8 +17,6 @@
 - Gif capture app for macOS
 - Featured on Product Hunt https://www.producthunt.com/posts/gifcapture
 - Featured on Softpedia http://mac.softpedia.com/get/Graphics/GifCapture.shtml
-- Icon http://emojione.com/
-- NSGIF https://github.com/NSRare/NSGIF
 
 # Features
 
@@ -38,13 +36,24 @@
 <img src="Images/g3.gif" width="240" height="200" />
 </div>
 
-# How to use
+## How to install
 
-### Binary
+### Manually 
 - Get the binary from https://github.com/onmyway133/GifCapture/releases
 
 ### Brew Cask
 - Run `brew cask install gifcapture`
+
+## How to use
+
+- Drag and resize to specify capture window
+- Press `Cmd+R` to start recording
+- Press `Cmd+S` to stop and save
+
+## Credit
+
+- Icon http://emojione.com/
+- NSGIF https://github.com/NSRare/NSGIF
 
 ## Author
 
