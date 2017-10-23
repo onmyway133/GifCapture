@@ -21,7 +21,7 @@
 ### Features
 
 - [x] Resizable window
-- [x] Key equivalent (Cmd+R, Cmd+S)
+- [x] Key equivalence
 - [x] Open captured gif from notification banner
 - [x] Preferences
 - [ ] Progress HUD
@@ -47,8 +47,8 @@
 ## How to use
 
 - Drag and resize to specify capture window
-- Press `Cmd+R` to start recording
-- Press `Cmd+S` to stop and save
+- Press <kbd>Cmd+R</kbd> to start recording
+- Press <kbd>Cmd+S</kbd> to stop and save
 
 ## Credit
 
