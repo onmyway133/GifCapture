@@ -1,5 +1,7 @@
 # GifCapture
 
+❤️ Support my work https://gum.co/dNrD ❤️
+
 <div align = "center">
 <img src="Images/Icon.png" width="150" height="150" />
 <br>
