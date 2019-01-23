@@ -311,6 +311,7 @@
 				TargetAttributes = {
 					D20CD83B1E675E6100DB57D0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T78DK947F2;
 						ProvisioningStyle = Automatic;
 					};
 					D20CD84C1E675E6100DB57D0 = {
@@ -687,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T78DK947F2;
 				INFOPLIST_FILE = GifCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -701,6 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T78DK947F2;
 				INFOPLIST_FILE = GifCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
