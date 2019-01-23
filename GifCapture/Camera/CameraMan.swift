@@ -25,7 +25,7 @@ class CameraMan: NSObject {
       .appendingPathExtension("mov")
 
     session.startRunning()
-    output.startRecording(toOutputFileURL: tempVideoUrl, recordingDelegate: self)
+    output.startRecording(to: tempVideoUrl, recordingDelegate: self)
   }
 
   func resume() {
@@ -56,10 +56,10 @@ class CameraMan: NSObject {
 
     // Session
     session = AVCaptureSession()
-    session.sessionPreset = AVCaptureSessionPresetHigh
+    session.sessionPreset = AVCaptureSession.Preset.high
 
     // Input
-    input = AVCaptureScreenInput(displayID: CGMainDisplayID())
+    input = AVCaptureScreenInput(displayID: CGMainDisplayID())!
     input.cropRect = rect
     if session.canAddInput(input) {
       session.addInput(input)
@@ -77,6 +77,9 @@ class CameraMan: NSObject {
 }
 
 extension CameraMan: AVCaptureFileOutputRecordingDelegate {
+  func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+    // No op
+  }
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didStartRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
     delegate?.cameraMan(man: self, didChange: .record)
@@ -88,10 +91,6 @@ extension CameraMan: AVCaptureFileOutputRecordingDelegate {
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didResumeRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
     delegate?.cameraMan(man: self, didChange: .resume)
-  }
-
-  func capture(_ captureOutput: AVCaptureFileOutput!, willFinishRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
-
   }
 
   func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {

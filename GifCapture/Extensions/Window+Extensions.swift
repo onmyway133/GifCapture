@@ -15,11 +15,11 @@ extension NSWindow {
       styleMask.update(with: .resizable)
       isMovable = true
       isMovableByWindowBackground = true
-      level = Int(CGWindowLevelForKey(.normalWindow))
+      level = NSWindow.Level(Int(CGWindowLevelForKey(.normalWindow)))
     } else {
       styleMask.remove(.resizable)
       isMovable = false
-      level = Int(CGWindowLevelForKey(.floatingWindow))
+      level = NSWindow.Level(Int(CGWindowLevelForKey(.floatingWindow)))
     }
   }
 }

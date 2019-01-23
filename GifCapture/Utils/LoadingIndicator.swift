@@ -22,7 +22,7 @@ class LoadingIndicator: NSBox {
     borderType = .noBorder
 
     progressIndicator = NSProgressIndicator()
-    progressIndicator.style = .spinningStyle
+    progressIndicator.style = .spinning
     progressIndicator.isDisplayedWhenStopped = false
     progressIndicator.startAnimation(nil)
 

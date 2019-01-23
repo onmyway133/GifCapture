@@ -7,7 +7,7 @@ class MainWindowController: NSWindowController, NSWindowDelegate {
   override func windowDidLoad() {
     super.windowDidLoad()
 
-    NotificationCenter.default.addObserver(self, selector: #selector(windowWillClose(_:)), name: Notification.Name.NSWindowWillClose, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(windowWillClose(_:)), name: NSWindow.willCloseNotification, object: nil)
   }
 
   override func awakeFromNib() {

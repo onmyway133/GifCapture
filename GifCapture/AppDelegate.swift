@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   @IBOutlet weak var stopMenuItem: NSMenuItem!
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    let window = NSApplication.shared().windows.first!
+    let window = NSApplication.shared.windows.first!
 
     // Window
     window.isOpaque = false
@@ -35,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @IBAction func helpMenuItemTouched(_ sender: NSMenuItem) {
     let url = URL(string: "https://github.com/onmyway133/GifCapture")!
-    NSWorkspace.shared().open(url)
+    NSWorkspace.shared.open(url)
   }
 }
 
@@ -51,7 +51,7 @@ extension AppDelegate: NSUserNotificationCenterDelegate {
       return
     }
 
-    NSWorkspace.shared().activateFileViewerSelecting([url])
+    NSWorkspace.shared.activateFileViewerSelecting([url])
   }
 }
 

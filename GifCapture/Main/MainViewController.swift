@@ -151,12 +151,12 @@ class MainViewController: NSViewController {
 
   func toggleRecordButton(enabled: Bool) {
     recordButton.isEnabled = enabled
-    (NSApplication.shared().delegate as! AppDelegate).recordMenuItem.isEnabled = enabled
+    (NSApplication.shared.delegate as! AppDelegate).recordMenuItem.isEnabled = enabled
   }
 
   func toggleStopButton(enabled: Bool) {
     stopButton.isEnabled = enabled
-    (NSApplication.shared().delegate as! AppDelegate).stopMenuItem.isEnabled = enabled
+    (NSApplication.shared.delegate as! AppDelegate).stopMenuItem.isEnabled = enabled
   }
 
   @IBAction func recordMenuItemTouched(_ sender: NSMenuItem) {
