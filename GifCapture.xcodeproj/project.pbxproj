@@ -75,6 +75,7 @@
 		D20CD85C1E675E6100DB57D0 /* GifCaptureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCaptureUITests.swift; sourceTree = "<group>"; };
 		D20CD85E1E675E6100DB57D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D26E16431E6CB136002454A9 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		D29D184C22F377D700F288B9 /* GifCapture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GifCapture.entitlements; sourceTree = "<group>"; };
 		D2D713FF1EE053010028611E /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		D2D93AA421F9171F00E841D6 /* GifCapture copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GifCapture copy-Info.plist"; path = "/Users/khoa/XcodeProject2/GifCapture/GifCapture copy-Info.plist"; sourceTree = "<absolute>"; };
 		FA4FDBE7A8D8847DE78F8DD8 /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifCaptureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 		D20CD83E1E675E6100DB57D0 /* GifCapture */ = {
 			isa = PBXGroup;
 			children = (
+				D29D184C22F377D700F288B9 /* GifCapture.entitlements */,
 				D200EE981E6CA2F000885DBF /* Camera */,
 				D200EE9C1E6CA2F000885DBF /* Extensions */,
 				D200EE9E1E6CA2F000885DBF /* Main */,
@@ -246,7 +248,6 @@
 				D20CD8391E675E6100DB57D0 /* Frameworks */,
 				D20CD83A1E675E6100DB57D0 /* Resources */,
 				5A59E4198CBA8610EC91770A /* [CP] Embed Pods Frameworks */,
-				8B28CF1FADFEF92C32C7E117 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,8 +266,6 @@
 				D20CD8491E675E6100DB57D0 /* Sources */,
 				D20CD84A1E675E6100DB57D0 /* Frameworks */,
 				D20CD84B1E675E6100DB57D0 /* Resources */,
-				F1B5DACF488F6A431E9A2098 /* [CP] Embed Pods Frameworks */,
-				17C20C11498762FE6E058345 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,8 +285,6 @@
 				D20CD8541E675E6100DB57D0 /* Sources */,
 				D20CD8551E675E6100DB57D0 /* Frameworks */,
 				D20CD8561E675E6100DB57D0 /* Resources */,
-				77E1FAEA37DAE69C85A6850A /* [CP] Embed Pods Frameworks */,
-				60FD14E7F98860ACB66B7AD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,6 +310,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = T78DK947F2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					D20CD84C1E675E6100DB57D0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -331,6 +336,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -380,28 +386,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifCaptureTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		17C20C11498762FE6E058345 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		568CE11FC7756A4A3786307A /* [CP] Check Pods Manifest.lock */ = {
@@ -410,13 +404,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifCapture-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A59E4198CBA8610EC91770A /* [CP] Embed Pods Frameworks */ = {
@@ -425,73 +422,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifCapture/Pods-GifCapture-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NSGIF/NSGIF.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSGIF.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCapture/Pods-GifCapture-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		60FD14E7F98860ACB66B7AD8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77E1FAEA37DAE69C85A6850A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B28CF1FADFEF92C32C7E117 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCapture/Pods-GifCapture-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1B5DACF488F6A431E9A2098 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifCapture/Pods-GifCapture-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FAE3E8F0F7016E9FDCD36804 /* [CP] Check Pods Manifest.lock */ = {
@@ -500,13 +440,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifCaptureUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -687,12 +630,15 @@
 			baseConfigurationReference = 60D6F78C276C230867BD2300 /* Pods-GifCapture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GifCapture/GifCapture.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T78DK947F2;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = GifCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCapture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.GifCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -702,12 +648,15 @@
 			baseConfigurationReference = 9AE5F426746B05510203A0AF /* Pods-GifCapture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GifCapture/GifCapture.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = T78DK947F2;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = GifCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.GifCapture;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.GifCapture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

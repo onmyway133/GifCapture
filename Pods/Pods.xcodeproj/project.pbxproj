@@ -7,331 +7,339 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AD0F76A9E824E76B751563431685C52 /* Pods-GifCaptureUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB8383F0D1EE1E3F661CBC130F2A66A /* Pods-GifCaptureUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		202EE7823D60C5766CA06B81E4FA40B7 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A64625E60E0F3AFB0BDD3636DF8188 /* NSGIF.m */; };
-		32C5035E1DED0F7D4B3DADFFD27B3A1D /* Pods-GifCapture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C31DBD1CF8A347E46743AE6FF98712F9 /* Pods-GifCapture-dummy.m */; };
-		61CE56095981587086944F5D90B79F97 /* NSGIF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D552CE0190CD2E36FE18739F2604951 /* NSGIF-dummy.m */; };
-		68C2DA33514D58E10F228341896C28BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		78B22680E0A2F0627C13002F62EDA3E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		7DE555FFA7A3B0ADE1CBAE0B2ED30615 /* Pods-GifCaptureTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C7980875533DE6D182BDE85FAE798C /* Pods-GifCaptureTests-dummy.m */; };
-		808977A8D5B1992FB19B6DE04FA831DE /* NSGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CB80644C3BEB2862B1499CDE64EA77 /* NSGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9258610D4A491BE828DE379A5561352C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		9B1B009518E9F6EE17B1A4DC2CEBC09D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		A9A41F5F9583DBD284B30C29F06F4339 /* NSGIF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC74D07C78D6F5A6C57F8114ED9C38A /* NSGIF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB49267C652F07A6F9D68DBDC404013A /* Pods-GifCapture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FDFFF866C153DBE8728D32C0555177 /* Pods-GifCapture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB1C8AB168AC414FBC721051F8F95027 /* Pods-GifCaptureTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF10B27ACC2150F45DFC691CAC8EF6B /* Pods-GifCaptureTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB542E2480EB42044E284B2FB8A24813 /* Pods-GifCaptureUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D0975AA65AFAE4A311A516CD768D80 /* Pods-GifCaptureUITests-dummy.m */; };
+		12107F9BA2A10660F7E801331E095C68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		1F87BF028036A65D94F033D15C2C6982 /* Pods-GifCapture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B5E6408873E23706BDF21D44AC688E /* Pods-GifCapture-dummy.m */; };
+		34F10608437401B7F270BFFBF129DE29 /* NSGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B46BE0DB8AB2E58C6D50A2A072D57A /* NSGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8EFABC71C727FEE8997057D14F06AE /* Pods-GifCaptureUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F89019A056F950ABD429C3CD7DAC81C /* Pods-GifCaptureUITests-dummy.m */; };
+		4C93B14522D7C5A000524A18A2B31644 /* Pods-GifCaptureUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A475090EBE135956390F4BBCFFC8F47 /* Pods-GifCaptureUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66DD376BB808A0F16E903DE1F8F07A33 /* NSGIF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F5494C52325D7A6F29AFFE7CE4C5FE /* NSGIF-dummy.m */; };
+		6CCE37117E0BB0D45BB74561C1EF6C70 /* Pods-GifCaptureTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB010C79DADB3F556DBAD8D53D2009B /* Pods-GifCaptureTests-dummy.m */; };
+		830541BB21541021664020E3AEC2C61E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		84711CC4EACBE8FF4B94D37F6010EEA3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		9A7EB66E14A79FF684EF976DC126320F /* NSGIF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3D900E661E161BE1C4FFC09A7042EC /* NSGIF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B767643CE0779C311BB3E86CE01A88D /* Pods-GifCapture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CE0E55A2318797FEA6870E8FE8C152 /* Pods-GifCapture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A57A0EC73462496140FD533D4CE9F3AE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		B17EF9FF1268F75B9037CC91FC83592B /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = AF77221858C7C75D6604FF7B70352655 /* NSGIF.m */; };
+		E399D07F219AB3AE32C78A16400A34AB /* Pods-GifCaptureTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84205691A141815618DCB4D8BA06AD86 /* Pods-GifCaptureTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B8A0B4D2121A92154533AA1A16FD776C /* PBXContainerItemProxy */ = {
+		22806C99D78881823E260FBCFD052C77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6D3CC2E1481FD4B03969ECA2FF3F07A8;
+			remoteGlobalIDString = 8B9227BF2FD05182EAA381C73EB78441;
 			remoteInfo = NSGIF;
+		};
+		B2B9689144AA93040AE7F90946823220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53420C4A0B908A759CA0FD3423D8148A;
+			remoteInfo = "Pods-GifCapture";
+		};
+		D395D360BD9C1064765D6E5019DF2DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53420C4A0B908A759CA0FD3423D8148A;
+			remoteInfo = "Pods-GifCapture";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08555B4080E074123CFABBB3E99AD6B3 /* Pods-GifCapture-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCapture-frameworks.sh"; sourceTree = "<group>"; };
-		0D356CD3BCCF1447A210D026D34E904A /* Pods-GifCaptureTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		13EA165BF307F9CAE569CD5586AA32FD /* Pods_GifCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCapture.framework; path = "Pods-GifCapture.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		18A64625E60E0F3AFB0BDD3636DF8188 /* NSGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSGIF.m; path = NSGIF/NSGIF.m; sourceTree = "<group>"; };
-		1EF10B27ACC2150F45DFC691CAC8EF6B /* Pods-GifCaptureTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCaptureTests-umbrella.h"; sourceTree = "<group>"; };
-		22CB80644C3BEB2862B1499CDE64EA77 /* NSGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSGIF.h; path = NSGIF/NSGIF.h; sourceTree = "<group>"; };
-		24458533387D6D0E166657E828E3F8A9 /* Pods-GifCaptureUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCaptureUITests-resources.sh"; sourceTree = "<group>"; };
-		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		2AC74D07C78D6F5A6C57F8114ED9C38A /* NSGIF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF-umbrella.h"; sourceTree = "<group>"; };
-		2D552CE0190CD2E36FE18739F2604951 /* NSGIF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSGIF-dummy.m"; sourceTree = "<group>"; };
-		313B5C47E168F8F92EB7C92CB526668B /* Pods-GifCapture-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCapture-resources.sh"; sourceTree = "<group>"; };
-		32C77B9AF3D68C35060324FA6435A4A4 /* Pods-GifCaptureUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GifCaptureUITests.modulemap"; sourceTree = "<group>"; };
-		347CC51E9D956591FCA2EFAC7352E19F /* NSGIF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSGIF.xcconfig; sourceTree = "<group>"; };
-		349B2D3E20CC1A3DDBA5CBF6177537CE /* NSGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSGIF.framework; path = NSGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		439CFE74339CE9F37A67EA52900D5083 /* Pods_GifCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCaptureTests.framework; path = "Pods-GifCaptureTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43C37D3FBDFF8CFE9DC94C914B8283D8 /* NSGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NSGIF.modulemap; sourceTree = "<group>"; };
-		45FF17E123A055BED33A006FD9B0A976 /* Pods-GifCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4BCBD8E175DFCD8C7E377D952418B49D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C9C59B4F37CECED151940FA52A84FE5 /* Pods-GifCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCapture.release.xcconfig"; sourceTree = "<group>"; };
-		53C7980875533DE6D182BDE85FAE798C /* Pods-GifCaptureTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCaptureTests-dummy.m"; sourceTree = "<group>"; };
-		5424AD547BC0C0464D7BBD089544C604 /* Pods-GifCaptureTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCaptureTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A6BFCAF4499FEDB8F5A0CA2495DB91C /* Pods-GifCaptureTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GifCaptureTests.modulemap"; sourceTree = "<group>"; };
-		63D0975AA65AFAE4A311A516CD768D80 /* Pods-GifCaptureUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCaptureUITests-dummy.m"; sourceTree = "<group>"; };
-		6ECFECC215712794A6A3EA82A9CE6DD5 /* NSGIF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF-prefix.pch"; sourceTree = "<group>"; };
-		73E32809D578DAFCA6709C3E142AF8DA /* Pods-GifCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GifCapture.modulemap"; sourceTree = "<group>"; };
-		7D01719E5AC1E98B59EA8B6F71CE6492 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85FDFFF866C153DBE8728D32C0555177 /* Pods-GifCapture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCapture-umbrella.h"; sourceTree = "<group>"; };
-		87EFDF7DE07F54521BC83CF9439467EB /* Pods-GifCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCapture.debug.xcconfig"; sourceTree = "<group>"; };
-		936E509A10C95CE4CD9F0CC686485C58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C6C3547C127E04D0EBBCF3D8F69CFDE /* Pods-GifCapture-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCapture-acknowledgements.plist"; sourceTree = "<group>"; };
-		A398D5354923A71C5E77EFF21925502D /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
-		ABB8383F0D1EE1E3F661CBC130F2A66A /* Pods-GifCaptureUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCaptureUITests-umbrella.h"; sourceTree = "<group>"; };
-		B948602C52B61C5B035990EDBE7A24B8 /* Pods-GifCaptureUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCaptureUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BA1C2EE19A99CCE3ECBBB5C226519F3A /* Pods-GifCapture-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCapture-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BBCE1F8B8FC2C6E679204CE804CEAEE2 /* Pods_GifCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCaptureUITests.framework; path = "Pods-GifCaptureUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF5DD9CA45837444577714C4D47D4E0B /* Pods-GifCaptureUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCaptureUITests-frameworks.sh"; sourceTree = "<group>"; };
-		C2B8EB11882959B394C4EE7C95B60A8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C31DBD1CF8A347E46743AE6FF98712F9 /* Pods-GifCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCapture-dummy.m"; sourceTree = "<group>"; };
-		CD825A613823D39BB888BA2F625C44EB /* Pods-GifCaptureUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E26B3CE5E2ABB6000CE65629EF5B93F4 /* Pods-GifCaptureTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCaptureTests-frameworks.sh"; sourceTree = "<group>"; };
-		E2EDDD5EEC373F9DD47D3F65C1753B1C /* Pods-GifCaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E36BD1336CC64D6B2C67A8759C91B2D2 /* Pods-GifCaptureTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCaptureTests-resources.sh"; sourceTree = "<group>"; };
-		EF84F452170DBBE0DA763D25332565CB /* Pods-GifCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		002CD18F7EDC6CE6331CB3BB8C7A3AA9 /* Pods-GifCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		10B5E6408873E23706BDF21D44AC688E /* Pods-GifCapture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCapture-dummy.m"; sourceTree = "<group>"; };
+		1C3538BBBBCED74BDD0963C5521CB79D /* NSGIF-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF-prefix.pch"; sourceTree = "<group>"; };
+		28292A221879685C2EC10600A8DFE018 /* Pods-GifCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2BB010C79DADB3F556DBAD8D53D2009B /* Pods-GifCaptureTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCaptureTests-dummy.m"; sourceTree = "<group>"; };
+		32C292DB02D50D5E41BB813E8124E83D /* Pods_GifCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCaptureTests.framework; path = "Pods-GifCaptureTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CE0E55A2318797FEA6870E8FE8C152 /* Pods-GifCapture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCapture-umbrella.h"; sourceTree = "<group>"; };
+		3B447D48947836B83C98269D35855236 /* NSGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NSGIF.framework; path = NSGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3D900E661E161BE1C4FFC09A7042EC /* NSGIF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSGIF-umbrella.h"; sourceTree = "<group>"; };
+		3EDCA7F9D947E3E3875CAD0ADF21E6D6 /* NSGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NSGIF.modulemap; sourceTree = "<group>"; };
+		4F0CB9CABEF30E483C5E358D06D97018 /* Pods-GifCaptureTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		56E318E3A721B02CCCBEDC92B9909C85 /* Pods-GifCapture-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCapture-acknowledgements.plist"; sourceTree = "<group>"; };
+		586CA730A0163437232B5A9C1B2E6995 /* Pods-GifCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+		5871D862F7676DB4A5D7A0CB9E7F4815 /* Pods-GifCaptureTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GifCaptureTests.modulemap"; sourceTree = "<group>"; };
+		6DFB854A1C98C1EC606E4D560445B5E0 /* Pods_GifCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCaptureUITests.framework; path = "Pods-GifCaptureUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F89019A056F950ABD429C3CD7DAC81C /* Pods-GifCaptureUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GifCaptureUITests-dummy.m"; sourceTree = "<group>"; };
+		6FDC72A4599F45DD8A894BA46775C37C /* Pods-GifCaptureUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GifCaptureUITests.modulemap"; sourceTree = "<group>"; };
+		759EFEBE3E21F4B79C9F9DB3B5EE914B /* NSGIF.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSGIF.xcconfig; sourceTree = "<group>"; };
+		772E317C1C482187EC5A9EA5416E4A13 /* NSGIF-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NSGIF-Info.plist"; sourceTree = "<group>"; };
+		7759B84EB09C64B2B7C974AA4D8C9F58 /* Pods-GifCaptureTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureTests-Info.plist"; sourceTree = "<group>"; };
+		834721AED53B1C9F3A9021019E431E2F /* Pods_GifCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GifCapture.framework; path = "Pods-GifCapture.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84205691A141815618DCB4D8BA06AD86 /* Pods-GifCaptureTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCaptureTests-umbrella.h"; sourceTree = "<group>"; };
+		8771BCE7B639CFE0F9EADC87F8D97559 /* Pods-GifCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCapture.release.xcconfig"; sourceTree = "<group>"; };
+		8A475090EBE135956390F4BBCFFC8F47 /* Pods-GifCaptureUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GifCaptureUITests-umbrella.h"; sourceTree = "<group>"; };
+		9AD60513F1C563ECF8FC72030C910708 /* Pods-GifCapture-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCapture-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA7F78832DCA3E98534B6188C43176E3 /* Pods-GifCaptureTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCaptureTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF77221858C7C75D6604FF7B70352655 /* NSGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NSGIF.m; path = NSGIF/NSGIF.m; sourceTree = "<group>"; };
+		B2B46BE0DB8AB2E58C6D50A2A072D57A /* NSGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NSGIF.h; path = NSGIF/NSGIF.h; sourceTree = "<group>"; };
+		B6F5494C52325D7A6F29AFFE7CE4C5FE /* NSGIF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSGIF-dummy.m"; sourceTree = "<group>"; };
+		BFF80E94DD32A7EE1A610BA2B235C2CE /* Pods-GifCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3FB2BD97911EF3B0C2E9EC360F44FCB /* Pods-GifCapture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GifCapture.modulemap"; sourceTree = "<group>"; };
+		D6352E6F8B13F55A4DC3E7D83964BB7D /* Pods-GifCaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GifCaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E29A0E2A56200887FDBD3C18A04FB109 /* Pods-GifCaptureUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC7C38FD126C1F18C90AF10C394ACC6C /* Pods-GifCaptureUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCaptureUITests-Info.plist"; sourceTree = "<group>"; };
+		EE6C4897C5A5FEFD3C2096A71C477386 /* Pods-GifCapture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GifCapture-Info.plist"; sourceTree = "<group>"; };
+		EFF706E312E78A2AAA7A8D3F1F7DBCBA /* Pods-GifCaptureUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GifCaptureUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1EDF60640CA917643E8BB014D9C32A6 /* Pods-GifCapture-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GifCapture-frameworks.sh"; sourceTree = "<group>"; };
+		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F3BF96B432B2087C81F30250959AA1D /* Frameworks */ = {
+		125497270BFD0D7C5431E6E4ED2EA28A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9258610D4A491BE828DE379A5561352C /* Cocoa.framework in Frameworks */,
+				A57A0EC73462496140FD533D4CE9F3AE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B82257717B808B8D41752A8BA4546E3D /* Frameworks */ = {
+		2EBF84F5880C473A2A6B0AE92E822B7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B22680E0A2F0627C13002F62EDA3E9 /* Cocoa.framework in Frameworks */,
+				12107F9BA2A10660F7E801331E095C68 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE7C509BC1CEF253283BFAF388C3E731 /* Frameworks */ = {
+		C99454C5D81BBBE5E3A7ACE73F323515 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1B009518E9F6EE17B1A4DC2CEBC09D /* Cocoa.framework in Frameworks */,
+				84711CC4EACBE8FF4B94D37F6010EEA3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA8EA7E64D8DC3558FC5E904AB4AF3B6 /* Frameworks */ = {
+		E974270356E0818D7AAD9172BC7C3832 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68C2DA33514D58E10F228341896C28BE /* Cocoa.framework in Frameworks */,
+				830541BB21541021664020E3AEC2C61E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C068A18C5413F804A2959126093416 /* OS X */ = {
+		1419CD9E427F3F9A184C726DAF33DA72 /* Pods-GifCapture */ = {
 			isa = PBXGroup;
 			children = (
-				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		1AC103BBBC1A96C26C59A6977ED8BEFD /* Pods-GifCaptureTests */ = {
-			isa = PBXGroup;
-			children = (
-				4BCBD8E175DFCD8C7E377D952418B49D /* Info.plist */,
-				5A6BFCAF4499FEDB8F5A0CA2495DB91C /* Pods-GifCaptureTests.modulemap */,
-				5424AD547BC0C0464D7BBD089544C604 /* Pods-GifCaptureTests-acknowledgements.markdown */,
-				0D356CD3BCCF1447A210D026D34E904A /* Pods-GifCaptureTests-acknowledgements.plist */,
-				53C7980875533DE6D182BDE85FAE798C /* Pods-GifCaptureTests-dummy.m */,
-				E26B3CE5E2ABB6000CE65629EF5B93F4 /* Pods-GifCaptureTests-frameworks.sh */,
-				E36BD1336CC64D6B2C67A8759C91B2D2 /* Pods-GifCaptureTests-resources.sh */,
-				1EF10B27ACC2150F45DFC691CAC8EF6B /* Pods-GifCaptureTests-umbrella.h */,
-				EF84F452170DBBE0DA763D25332565CB /* Pods-GifCaptureTests.debug.xcconfig */,
-				A398D5354923A71C5E77EFF21925502D /* Pods-GifCaptureTests.release.xcconfig */,
-			);
-			name = "Pods-GifCaptureTests";
-			path = "Target Support Files/Pods-GifCaptureTests";
-			sourceTree = "<group>";
-		};
-		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04C068A18C5413F804A2959126093416 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3DD6B44E1C202ED9F71718B470BA40E7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				349B2D3E20CC1A3DDBA5CBF6177537CE /* NSGIF.framework */,
-				13EA165BF307F9CAE569CD5586AA32FD /* Pods_GifCapture.framework */,
-				439CFE74339CE9F37A67EA52900D5083 /* Pods_GifCaptureTests.framework */,
-				BBCE1F8B8FC2C6E679204CE804CEAEE2 /* Pods_GifCaptureUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		404A2FD9D4940D2475F126C89F5F350D /* NSGIF */ = {
-			isa = PBXGroup;
-			children = (
-				22CB80644C3BEB2862B1499CDE64EA77 /* NSGIF.h */,
-				18A64625E60E0F3AFB0BDD3636DF8188 /* NSGIF.m */,
-				5DD6A07685C8AB6A2C8A64E5DC370514 /* Support Files */,
-			);
-			name = NSGIF;
-			path = NSGIF;
-			sourceTree = "<group>";
-		};
-		4F55D9A7A8F4A9041E4B78A5C66A45A7 /* Pods-GifCapture */ = {
-			isa = PBXGroup;
-			children = (
-				936E509A10C95CE4CD9F0CC686485C58 /* Info.plist */,
-				73E32809D578DAFCA6709C3E142AF8DA /* Pods-GifCapture.modulemap */,
-				BA1C2EE19A99CCE3ECBBB5C226519F3A /* Pods-GifCapture-acknowledgements.markdown */,
-				9C6C3547C127E04D0EBBCF3D8F69CFDE /* Pods-GifCapture-acknowledgements.plist */,
-				C31DBD1CF8A347E46743AE6FF98712F9 /* Pods-GifCapture-dummy.m */,
-				08555B4080E074123CFABBB3E99AD6B3 /* Pods-GifCapture-frameworks.sh */,
-				313B5C47E168F8F92EB7C92CB526668B /* Pods-GifCapture-resources.sh */,
-				85FDFFF866C153DBE8728D32C0555177 /* Pods-GifCapture-umbrella.h */,
-				87EFDF7DE07F54521BC83CF9439467EB /* Pods-GifCapture.debug.xcconfig */,
-				4C9C59B4F37CECED151940FA52A84FE5 /* Pods-GifCapture.release.xcconfig */,
+				D3FB2BD97911EF3B0C2E9EC360F44FCB /* Pods-GifCapture.modulemap */,
+				9AD60513F1C563ECF8FC72030C910708 /* Pods-GifCapture-acknowledgements.markdown */,
+				56E318E3A721B02CCCBEDC92B9909C85 /* Pods-GifCapture-acknowledgements.plist */,
+				10B5E6408873E23706BDF21D44AC688E /* Pods-GifCapture-dummy.m */,
+				F1EDF60640CA917643E8BB014D9C32A6 /* Pods-GifCapture-frameworks.sh */,
+				EE6C4897C5A5FEFD3C2096A71C477386 /* Pods-GifCapture-Info.plist */,
+				37CE0E55A2318797FEA6870E8FE8C152 /* Pods-GifCapture-umbrella.h */,
+				002CD18F7EDC6CE6331CB3BB8C7A3AA9 /* Pods-GifCapture.debug.xcconfig */,
+				8771BCE7B639CFE0F9EADC87F8D97559 /* Pods-GifCapture.release.xcconfig */,
 			);
 			name = "Pods-GifCapture";
 			path = "Target Support Files/Pods-GifCapture";
 			sourceTree = "<group>";
 		};
-		52A2072106F80C0BE542DDDFCA0A90CB /* Pods */ = {
+		7BA83333B6ADC9AB227A0EA64AB9422E /* Pods-GifCaptureTests */ = {
 			isa = PBXGroup;
 			children = (
-				404A2FD9D4940D2475F126C89F5F350D /* NSGIF */,
+				5871D862F7676DB4A5D7A0CB9E7F4815 /* Pods-GifCaptureTests.modulemap */,
+				AA7F78832DCA3E98534B6188C43176E3 /* Pods-GifCaptureTests-acknowledgements.markdown */,
+				4F0CB9CABEF30E483C5E358D06D97018 /* Pods-GifCaptureTests-acknowledgements.plist */,
+				2BB010C79DADB3F556DBAD8D53D2009B /* Pods-GifCaptureTests-dummy.m */,
+				7759B84EB09C64B2B7C974AA4D8C9F58 /* Pods-GifCaptureTests-Info.plist */,
+				84205691A141815618DCB4D8BA06AD86 /* Pods-GifCaptureTests-umbrella.h */,
+				BFF80E94DD32A7EE1A610BA2B235C2CE /* Pods-GifCaptureTests.debug.xcconfig */,
+				586CA730A0163437232B5A9C1B2E6995 /* Pods-GifCaptureTests.release.xcconfig */,
+			);
+			name = "Pods-GifCaptureTests";
+			path = "Target Support Files/Pods-GifCaptureTests";
+			sourceTree = "<group>";
+		};
+		85C9F910F91C117073A486C81F8517BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FA8B3394B23613CCC25AF32AF9C7F /* NSGIF */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5DD6A07685C8AB6A2C8A64E5DC370514 /* Support Files */ = {
+		9F8C8AB2DC1C3D9CC9490D15EBABC59C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2B8EB11882959B394C4EE7C95B60A8C /* Info.plist */,
-				43C37D3FBDFF8CFE9DC94C914B8283D8 /* NSGIF.modulemap */,
-				347CC51E9D956591FCA2EFAC7352E19F /* NSGIF.xcconfig */,
-				2D552CE0190CD2E36FE18739F2604951 /* NSGIF-dummy.m */,
-				6ECFECC215712794A6A3EA82A9CE6DD5 /* NSGIF-prefix.pch */,
-				2AC74D07C78D6F5A6C57F8114ED9C38A /* NSGIF-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NSGIF";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				52A2072106F80C0BE542DDDFCA0A90CB /* Pods */,
-				3DD6B44E1C202ED9F71718B470BA40E7 /* Products */,
-				C4E8B6013543E3275150E1E5B469AE59 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		C4E8B6013543E3275150E1E5B469AE59 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F55D9A7A8F4A9041E4B78A5C66A45A7 /* Pods-GifCapture */,
-				1AC103BBBC1A96C26C59A6977ED8BEFD /* Pods-GifCaptureTests */,
-				C54CA7975D6DA272EADB9EE93E2AC245 /* Pods-GifCaptureUITests */,
+				1419CD9E427F3F9A184C726DAF33DA72 /* Pods-GifCapture */,
+				7BA83333B6ADC9AB227A0EA64AB9422E /* Pods-GifCaptureTests */,
+				B11DC5BB22C2BAC13449161A8C0F2A1A /* Pods-GifCaptureUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C54CA7975D6DA272EADB9EE93E2AC245 /* Pods-GifCaptureUITests */ = {
+		B11DC5BB22C2BAC13449161A8C0F2A1A /* Pods-GifCaptureUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7D01719E5AC1E98B59EA8B6F71CE6492 /* Info.plist */,
-				32C77B9AF3D68C35060324FA6435A4A4 /* Pods-GifCaptureUITests.modulemap */,
-				B948602C52B61C5B035990EDBE7A24B8 /* Pods-GifCaptureUITests-acknowledgements.markdown */,
-				CD825A613823D39BB888BA2F625C44EB /* Pods-GifCaptureUITests-acknowledgements.plist */,
-				63D0975AA65AFAE4A311A516CD768D80 /* Pods-GifCaptureUITests-dummy.m */,
-				BF5DD9CA45837444577714C4D47D4E0B /* Pods-GifCaptureUITests-frameworks.sh */,
-				24458533387D6D0E166657E828E3F8A9 /* Pods-GifCaptureUITests-resources.sh */,
-				ABB8383F0D1EE1E3F661CBC130F2A66A /* Pods-GifCaptureUITests-umbrella.h */,
-				E2EDDD5EEC373F9DD47D3F65C1753B1C /* Pods-GifCaptureUITests.debug.xcconfig */,
-				45FF17E123A055BED33A006FD9B0A976 /* Pods-GifCaptureUITests.release.xcconfig */,
+				6FDC72A4599F45DD8A894BA46775C37C /* Pods-GifCaptureUITests.modulemap */,
+				EFF706E312E78A2AAA7A8D3F1F7DBCBA /* Pods-GifCaptureUITests-acknowledgements.markdown */,
+				E29A0E2A56200887FDBD3C18A04FB109 /* Pods-GifCaptureUITests-acknowledgements.plist */,
+				6F89019A056F950ABD429C3CD7DAC81C /* Pods-GifCaptureUITests-dummy.m */,
+				EC7C38FD126C1F18C90AF10C394ACC6C /* Pods-GifCaptureUITests-Info.plist */,
+				8A475090EBE135956390F4BBCFFC8F47 /* Pods-GifCaptureUITests-umbrella.h */,
+				D6352E6F8B13F55A4DC3E7D83964BB7D /* Pods-GifCaptureUITests.debug.xcconfig */,
+				28292A221879685C2EC10600A8DFE018 /* Pods-GifCaptureUITests.release.xcconfig */,
 			);
 			name = "Pods-GifCaptureUITests";
 			path = "Target Support Files/Pods-GifCaptureUITests";
 			sourceTree = "<group>";
 		};
+		CBD43E0947D94E318A0ED1350CFF29ED /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
+				85C9F910F91C117073A486C81F8517BE /* Pods */,
+				E8EA8A9B9191F3D4DF88EFBF3AB3147B /* Products */,
+				9F8C8AB2DC1C3D9CC9490D15EBABC59C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8FA8B3394B23613CCC25AF32AF9C7F /* NSGIF */ = {
+			isa = PBXGroup;
+			children = (
+				B2B46BE0DB8AB2E58C6D50A2A072D57A /* NSGIF.h */,
+				AF77221858C7C75D6604FF7B70352655 /* NSGIF.m */,
+				D6437580BDCD173ED1B7127C3DEE1C7E /* Support Files */,
+			);
+			name = NSGIF;
+			path = NSGIF;
+			sourceTree = "<group>";
+		};
+		D6437580BDCD173ED1B7127C3DEE1C7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCA7F9D947E3E3875CAD0ADF21E6D6 /* NSGIF.modulemap */,
+				759EFEBE3E21F4B79C9F9DB3B5EE914B /* NSGIF.xcconfig */,
+				B6F5494C52325D7A6F29AFFE7CE4C5FE /* NSGIF-dummy.m */,
+				772E317C1C482187EC5A9EA5416E4A13 /* NSGIF-Info.plist */,
+				1C3538BBBBCED74BDD0963C5521CB79D /* NSGIF-prefix.pch */,
+				3D3D900E661E161BE1C4FFC09A7042EC /* NSGIF-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSGIF";
+			sourceTree = "<group>";
+		};
+		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD43E0947D94E318A0ED1350CFF29ED /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8EA8A9B9191F3D4DF88EFBF3AB3147B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B447D48947836B83C98269D35855236 /* NSGIF.framework */,
+				834721AED53B1C9F3A9021019E431E2F /* Pods_GifCapture.framework */,
+				32C292DB02D50D5E41BB813E8124E83D /* Pods_GifCaptureTests.framework */,
+				6DFB854A1C98C1EC606E4D560445B5E0 /* Pods_GifCaptureUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2EEECC3015DEA7945F1D7E1D99C50223 /* Headers */ = {
+		58DB270673B9CA6101C77D29A439343C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1C8AB168AC414FBC721051F8F95027 /* Pods-GifCaptureTests-umbrella.h in Headers */,
+				4C93B14522D7C5A000524A18A2B31644 /* Pods-GifCaptureUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		616045165E2BDC13953BCE8FEA0E5821 /* Headers */ = {
+		9BE9BBEEC131B5524A7132A60A99082E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A41F5F9583DBD284B30C29F06F4339 /* NSGIF-umbrella.h in Headers */,
-				808977A8D5B1992FB19B6DE04FA831DE /* NSGIF.h in Headers */,
+				9A7EB66E14A79FF684EF976DC126320F /* NSGIF-umbrella.h in Headers */,
+				34F10608437401B7F270BFFBF129DE29 /* NSGIF.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFAB38D2E6D78E5A0A58DB774712804 /* Headers */ = {
+		D23B797A7993EBE3CD9EB8E5C88B3948 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD0F76A9E824E76B751563431685C52 /* Pods-GifCaptureUITests-umbrella.h in Headers */,
+				9B767643CE0779C311BB3E86CE01A88D /* Pods-GifCapture-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F80DE7B9A5AC26F020FBD2976606F214 /* Headers */ = {
+		D6CCDD2A20E0BAF66523E3EC3FAB05BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB49267C652F07A6F9D68DBDC404013A /* Pods-GifCapture-umbrella.h in Headers */,
+				E399D07F219AB3AE32C78A16400A34AB /* Pods-GifCaptureTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		405706B80EABB56ABB3EA9472A28154B /* Pods-GifCapture */ = {
+		53420C4A0B908A759CA0FD3423D8148A /* Pods-GifCapture */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D8666B80D8EA701F5DB38988BCB647F /* Build configuration list for PBXNativeTarget "Pods-GifCapture" */;
+			buildConfigurationList = E9D3CB101554C0530DB092834CE5F4A4 /* Build configuration list for PBXNativeTarget "Pods-GifCapture" */;
 			buildPhases = (
-				D48C68C3B66C1F5ACD71DDC76E8CF2FB /* Sources */,
-				FA8EA7E64D8DC3558FC5E904AB4AF3B6 /* Frameworks */,
-				F80DE7B9A5AC26F020FBD2976606F214 /* Headers */,
+				D23B797A7993EBE3CD9EB8E5C88B3948 /* Headers */,
+				323A9949E4B9B3D515A488647AB619E0 /* Sources */,
+				2EBF84F5880C473A2A6B0AE92E822B7B /* Frameworks */,
+				38D0DD0CE36ED15E8E83B59AF3D64DE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7FB44E3206440647352B084CF4C29760 /* PBXTargetDependency */,
+				F53447812C8F5BF5BA830F6B0D1921C6 /* PBXTargetDependency */,
 			);
 			name = "Pods-GifCapture";
 			productName = "Pods-GifCapture";
-			productReference = 13EA165BF307F9CAE569CD5586AA32FD /* Pods_GifCapture.framework */;
+			productReference = 834721AED53B1C9F3A9021019E431E2F /* Pods_GifCapture.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5FF9C2442F63346CC2C95F32DAB4ADE0 /* Pods-GifCaptureTests */ = {
+		58A605F22EF19FA9346B4A9DB4724995 /* Pods-GifCaptureUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 729ABF2EB0BADCDFC50DF4958694D4BE /* Build configuration list for PBXNativeTarget "Pods-GifCaptureTests" */;
+			buildConfigurationList = 6A31524DB57CB8D0672D0EF5FBA450E4 /* Build configuration list for PBXNativeTarget "Pods-GifCaptureUITests" */;
 			buildPhases = (
-				3A95824D14F59207B3E2F3D0E1CE813B /* Sources */,
-				BE7C509BC1CEF253283BFAF388C3E731 /* Frameworks */,
-				2EEECC3015DEA7945F1D7E1D99C50223 /* Headers */,
+				58DB270673B9CA6101C77D29A439343C /* Headers */,
+				2F792B33736B52191E4FA17CC769E4F9 /* Sources */,
+				E974270356E0818D7AAD9172BC7C3832 /* Frameworks */,
+				BA539AB020958701A39F55F724768449 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				32606DD4C0A70013AEC3435714514511 /* PBXTargetDependency */,
 			);
-			name = "Pods-GifCaptureTests";
-			productName = "Pods-GifCaptureTests";
-			productReference = 439CFE74339CE9F37A67EA52900D5083 /* Pods_GifCaptureTests.framework */;
+			name = "Pods-GifCaptureUITests";
+			productName = "Pods-GifCaptureUITests";
+			productReference = 6DFB854A1C98C1EC606E4D560445B5E0 /* Pods_GifCaptureUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6D3CC2E1481FD4B03969ECA2FF3F07A8 /* NSGIF */ = {
+		8B9227BF2FD05182EAA381C73EB78441 /* NSGIF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A077AB7BB7C06BB66E9A582B53C01BC /* Build configuration list for PBXNativeTarget "NSGIF" */;
+			buildConfigurationList = ABA5B10C19842255EEDA4FBE22D94B5F /* Build configuration list for PBXNativeTarget "NSGIF" */;
 			buildPhases = (
-				851955F10498A54D7340445EE439C579 /* Sources */,
-				9F3BF96B432B2087C81F30250959AA1D /* Frameworks */,
-				616045165E2BDC13953BCE8FEA0E5821 /* Headers */,
+				9BE9BBEEC131B5524A7132A60A99082E /* Headers */,
+				A5EFEE7612FA94C87246F91BEE81A6C4 /* Sources */,
+				C99454C5D81BBBE5E3A7ACE73F323515 /* Frameworks */,
+				EA6C67621E1DAAE8F859F52920D11B77 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -339,209 +347,208 @@
 			);
 			name = NSGIF;
 			productName = NSGIF;
-			productReference = 349B2D3E20CC1A3DDBA5CBF6177537CE /* NSGIF.framework */;
+			productReference = 3B447D48947836B83C98269D35855236 /* NSGIF.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8CC7BBF344F777998A02B982C9EA06AA /* Pods-GifCaptureUITests */ = {
+		98701CB64C93CE09B6B13EE9D7CF0B7C /* Pods-GifCaptureTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 006651EB8116ECD2E0E2050000CF2531 /* Build configuration list for PBXNativeTarget "Pods-GifCaptureUITests" */;
+			buildConfigurationList = CD647741BE92CEA95FF757737C7F29EA /* Build configuration list for PBXNativeTarget "Pods-GifCaptureTests" */;
 			buildPhases = (
-				2E649EC4DD4827E6E8743D14C30C35A9 /* Sources */,
-				B82257717B808B8D41752A8BA4546E3D /* Frameworks */,
-				DEFAB38D2E6D78E5A0A58DB774712804 /* Headers */,
+				D6CCDD2A20E0BAF66523E3EC3FAB05BB /* Headers */,
+				AC4114E826CBB9896894697ECB5E882A /* Sources */,
+				125497270BFD0D7C5431E6E4ED2EA28A /* Frameworks */,
+				0B57997A35BC09BE0AA758ADE7D6EC12 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D50AF20351ECADA935E42340D4E99280 /* PBXTargetDependency */,
 			);
-			name = "Pods-GifCaptureUITests";
-			productName = "Pods-GifCaptureUITests";
-			productReference = BBCE1F8B8FC2C6E679204CE804CEAEE2 /* Pods_GifCaptureUITests.framework */;
+			name = "Pods-GifCaptureTests";
+			productName = "Pods-GifCaptureTests";
+			productReference = 32C292DB02D50D5E41BB813E8124E83D /* Pods_GifCaptureTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3DD6B44E1C202ED9F71718B470BA40E7 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E8EA8A9B9191F3D4DF88EFBF3AB3147B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D3CC2E1481FD4B03969ECA2FF3F07A8 /* NSGIF */,
-				405706B80EABB56ABB3EA9472A28154B /* Pods-GifCapture */,
-				5FF9C2442F63346CC2C95F32DAB4ADE0 /* Pods-GifCaptureTests */,
-				8CC7BBF344F777998A02B982C9EA06AA /* Pods-GifCaptureUITests */,
+				8B9227BF2FD05182EAA381C73EB78441 /* NSGIF */,
+				53420C4A0B908A759CA0FD3423D8148A /* Pods-GifCapture */,
+				98701CB64C93CE09B6B13EE9D7CF0B7C /* Pods-GifCaptureTests */,
+				58A605F22EF19FA9346B4A9DB4724995 /* Pods-GifCaptureUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0B57997A35BC09BE0AA758ADE7D6EC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D0DD0CE36ED15E8E83B59AF3D64DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA539AB020958701A39F55F724768449 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6C67621E1DAAE8F859F52920D11B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2E649EC4DD4827E6E8743D14C30C35A9 /* Sources */ = {
+		2F792B33736B52191E4FA17CC769E4F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB542E2480EB42044E284B2FB8A24813 /* Pods-GifCaptureUITests-dummy.m in Sources */,
+				4A8EFABC71C727FEE8997057D14F06AE /* Pods-GifCaptureUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A95824D14F59207B3E2F3D0E1CE813B /* Sources */ = {
+		323A9949E4B9B3D515A488647AB619E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE555FFA7A3B0ADE1CBAE0B2ED30615 /* Pods-GifCaptureTests-dummy.m in Sources */,
+				1F87BF028036A65D94F033D15C2C6982 /* Pods-GifCapture-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		851955F10498A54D7340445EE439C579 /* Sources */ = {
+		A5EFEE7612FA94C87246F91BEE81A6C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61CE56095981587086944F5D90B79F97 /* NSGIF-dummy.m in Sources */,
-				202EE7823D60C5766CA06B81E4FA40B7 /* NSGIF.m in Sources */,
+				66DD376BB808A0F16E903DE1F8F07A33 /* NSGIF-dummy.m in Sources */,
+				B17EF9FF1268F75B9037CC91FC83592B /* NSGIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D48C68C3B66C1F5ACD71DDC76E8CF2FB /* Sources */ = {
+		AC4114E826CBB9896894697ECB5E882A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32C5035E1DED0F7D4B3DADFFD27B3A1D /* Pods-GifCapture-dummy.m in Sources */,
+				6CCE37117E0BB0D45BB74561C1EF6C70 /* Pods-GifCaptureTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7FB44E3206440647352B084CF4C29760 /* PBXTargetDependency */ = {
+		32606DD4C0A70013AEC3435714514511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GifCapture";
+			target = 53420C4A0B908A759CA0FD3423D8148A /* Pods-GifCapture */;
+			targetProxy = B2B9689144AA93040AE7F90946823220 /* PBXContainerItemProxy */;
+		};
+		D50AF20351ECADA935E42340D4E99280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GifCapture";
+			target = 53420C4A0B908A759CA0FD3423D8148A /* Pods-GifCapture */;
+			targetProxy = D395D360BD9C1064765D6E5019DF2DDC /* PBXContainerItemProxy */;
+		};
+		F53447812C8F5BF5BA830F6B0D1921C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NSGIF;
-			target = 6D3CC2E1481FD4B03969ECA2FF3F07A8 /* NSGIF */;
-			targetProxy = B8A0B4D2121A92154533AA1A16FD776C /* PBXContainerItemProxy */;
+			target = 8B9227BF2FD05182EAA381C73EB78441 /* NSGIF */;
+			targetProxy = 22806C99D78881823E260FBCFD052C77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3DB614422219E8A48986711F1B1B4ADA /* Debug */ = {
+		069658355064E8AE5FCED210BF2D39D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 347CC51E9D956591FCA2EFAC7352E19F /* NSGIF.xcconfig */;
+			baseConfigurationReference = 759EFEBE3E21F4B79C9F9DB3B5EE914B /* NSGIF.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/NSGIF/NSGIF-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NSGIF/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/NSGIF/NSGIF-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "Target Support Files/NSGIF/NSGIF.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_MODULE_NAME = NSGIF;
 				PRODUCT_NAME = NSGIF;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		4768537DA1BF950E679ED85F03C11F37 /* Release */ = {
+		1510233DC93D3FBEE50B169A46F95408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586CA730A0163437232B5A9C1B2E6995 /* Pods-GifCaptureTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5989F70C85CE29E3845E7F4B1B7C565F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C9C59B4F37CECED151940FA52A84FE5 /* Pods-GifCapture.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GifCapture/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-GifCapture/Pods-GifCapture.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GifCapture;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -549,110 +556,35 @@
 			};
 			name = Release;
 		};
-		833C9D70C251B410DB6758A4F427550B /* Debug */ = {
+		16FD663C5EC025715A1D2CE587FCEA7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87EFDF7DE07F54521BC83CF9439467EB /* Pods-GifCapture.debug.xcconfig */;
+			baseConfigurationReference = 28292A221879685C2EC10600A8DFE018 /* Pods-GifCaptureUITests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GifCapture/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-GifCapture/Pods-GifCapture.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GifCapture;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8D8250743A627A3DB078DF6D9D525CC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2EDDD5EEC373F9DD47D3F65C1753B1C /* Pods-GifCaptureUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = "Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GifCaptureUITests;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9F24C5F86DB1E26FCB6D4614974C9F36 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A398D5354923A71C5E77EFF21925502D /* Pods-GifCaptureTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GifCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -660,36 +592,71 @@
 			};
 			name = Release;
 		};
-		B4613DB7D7B2511B96462297DC768D17 /* Debug */ = {
+		1B9C2192DAA8D084E36E911905C2F409 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF84F452170DBBE0DA763D25332565CB /* Pods-GifCaptureTests.debug.xcconfig */;
+			baseConfigurationReference = 8771BCE7B639CFE0F9EADC87F8D97559 /* Pods-GifCapture.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCapture/Pods-GifCapture-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-GifCapture/Pods-GifCapture.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64C587C6F55C0B7191D77CBB8259F126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF80E94DD32A7EE1A610BA2B235C2CE /* Pods-GifCaptureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MODULEMAP_FILE = "Target Support Files/Pods-GifCaptureTests/Pods-GifCaptureTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GifCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -697,174 +664,284 @@
 			};
 			name = Debug;
 		};
-		B586BB7AE092349C47DC4D1D2F47B60B /* Debug */ = {
+		7440D515053ED0806561AA62F9D68F06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9914630BE3ED6F938477E87098E979AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002CD18F7EDC6CE6331CB3BB8C7A3AA9 /* Pods-GifCapture.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCapture/Pods-GifCapture-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-GifCapture/Pods-GifCapture.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EABD40C2A82AE33D3DFC59644BC5F96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759EFEBE3E21F4B79C9F9DB3B5EE914B /* NSGIF.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/NSGIF/NSGIF-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NSGIF/NSGIF-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/NSGIF/NSGIF.modulemap";
+				PRODUCT_MODULE_NAME = NSGIF;
+				PRODUCT_NAME = NSGIF;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D077CAD73066B8E486D591F5D9CBE512 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6352E6F8B13F55A4DC3E7D83964BB7D /* Pods-GifCaptureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF78091F2E132A0C4F200C5D32A31F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		D30D6552BCF208203DC887BF4725D68D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45FF17E123A055BED33A006FD9B0A976 /* Pods-GifCaptureUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GifCaptureUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MODULEMAP_FILE = "Target Support Files/Pods-GifCaptureUITests/Pods-GifCaptureUITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_GifCaptureUITests;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F3BCC9A8490813B812FE53CFF452F814 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 347CC51E9D956591FCA2EFAC7352E19F /* NSGIF.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NSGIF/NSGIF-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NSGIF/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/NSGIF/NSGIF.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = NSGIF;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		006651EB8116ECD2E0E2050000CF2531 /* Build configuration list for PBXNativeTarget "Pods-GifCaptureUITests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D8250743A627A3DB078DF6D9D525CC6 /* Debug */,
-				D30D6552BCF208203DC887BF4725D68D /* Release */,
+				FF78091F2E132A0C4F200C5D32A31F56 /* Debug */,
+				7440D515053ED0806561AA62F9D68F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		6A31524DB57CB8D0672D0EF5FBA450E4 /* Build configuration list for PBXNativeTarget "Pods-GifCaptureUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B586BB7AE092349C47DC4D1D2F47B60B /* Debug */,
-				4768537DA1BF950E679ED85F03C11F37 /* Release */,
+				D077CAD73066B8E486D591F5D9CBE512 /* Debug */,
+				16FD663C5EC025715A1D2CE587FCEA7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A077AB7BB7C06BB66E9A582B53C01BC /* Build configuration list for PBXNativeTarget "NSGIF" */ = {
+		ABA5B10C19842255EEDA4FBE22D94B5F /* Build configuration list for PBXNativeTarget "NSGIF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DB614422219E8A48986711F1B1B4ADA /* Debug */,
-				F3BCC9A8490813B812FE53CFF452F814 /* Release */,
+				069658355064E8AE5FCED210BF2D39D3 /* Debug */,
+				9EABD40C2A82AE33D3DFC59644BC5F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		729ABF2EB0BADCDFC50DF4958694D4BE /* Build configuration list for PBXNativeTarget "Pods-GifCaptureTests" */ = {
+		CD647741BE92CEA95FF757737C7F29EA /* Build configuration list for PBXNativeTarget "Pods-GifCaptureTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4613DB7D7B2511B96462297DC768D17 /* Debug */,
-				9F24C5F86DB1E26FCB6D4614974C9F36 /* Release */,
+				64C587C6F55C0B7191D77CBB8259F126 /* Debug */,
+				1510233DC93D3FBEE50B169A46F95408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D8666B80D8EA701F5DB38988BCB647F /* Build configuration list for PBXNativeTarget "Pods-GifCapture" */ = {
+		E9D3CB101554C0530DB092834CE5F4A4 /* Build configuration list for PBXNativeTarget "Pods-GifCapture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				833C9D70C251B410DB6758A4F427550B /* Debug */,
-				5989F70C85CE29E3845E7F4B1B7C565F /* Release */,
+				9914630BE3ED6F938477E87098E979AF /* Debug */,
+				1B9C2192DAA8D084E36E911905C2F409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
