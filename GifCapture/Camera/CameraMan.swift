@@ -77,31 +77,27 @@ class CameraMan: NSObject {
 }
 
 extension CameraMan: AVCaptureFileOutputRecordingDelegate {
+    func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
+        delegate?.cameraMan(man: self, didChange: .record)
+    }
+
   func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
-    // No op
-  }
-
-  func capture(_ captureOutput: AVCaptureFileOutput!, didStartRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
-    delegate?.cameraMan(man: self, didChange: .record)
-  }
-
-  func capture(_ captureOutput: AVCaptureFileOutput!, didPauseRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
-    delegate?.cameraMan(man: self, didChange: .pause)
-  }
-
-  func capture(_ captureOutput: AVCaptureFileOutput!, didResumeRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
-    delegate?.cameraMan(man: self, didChange: .resume)
-  }
-
-  func capture(_ captureOutput: AVCaptureFileOutput!, didFinishRecordingToOutputFileAt outputFileURL: URL!, fromConnections connections: [Any]!, error: Error!) {
     delegate?.cameraMan(man: self, didChange: .stop)
 
     saver.save(videoUrl: outputFileURL) { [weak self] url in
-      guard let strongSelf = self else {
-        return
-      }
+        guard let strongSelf = self else {
+            return
+        }
 
-      strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .finish(url))
+        strongSelf.delegate?.cameraMan(man: strongSelf, didChange: .finish(url))
     }
   }
+
+    func fileOutput(_ output: AVCaptureFileOutput, didPauseRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
+        delegate?.cameraMan(man: self, didChange: .pause)
+    }
+
+    func fileOutput(_ output: AVCaptureFileOutput, didResumeRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
+        delegate?.cameraMan(man: self, didChange: .resume)
+    }
 }
